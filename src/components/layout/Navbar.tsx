@@ -18,7 +18,7 @@ const ClassNames: NavbarClass = {
   mobile: 'text-white',
 };
 
-function MobileMenu({ isActive, children }: MobileMenuProps): JSX.Element {
+function MobileMenu({ isActive, children }: MobileMenuProps): React.ReactNode {
   return (
     <div
       className={`${isActive ? 'translate-x-0' : 'translate-x-full'} fixed top-0 left-0 z-[49] flex h-full w-full flex-col items-center justify-start bg-zinc-500 px-5 transition-all duration-500 lg:hidden`}
@@ -30,7 +30,7 @@ function MobileMenu({ isActive, children }: MobileMenuProps): JSX.Element {
   );
 }
 
-export default function Navbar(): JSX.Element {
+export default function Navbar(): React.ReactNode {
   const Router = useRouter();
   const { t } = useTranslation();
   const [scrolledDown, setScrolledDown] = React.useState<boolean>(false);
@@ -45,7 +45,7 @@ export default function Navbar(): JSX.Element {
     },
   ];
 
-  const getDesktopElements = (): JSX.Element[] => {
+  const getDesktopElements = (): React.ReactNode => {
     const elements = HeaderLinks.map(
       ({ url, name, id, classNames: { desktop: className }, external }) => (
         <li key={`d-elm-${id}`}>
@@ -70,7 +70,7 @@ export default function Navbar(): JSX.Element {
     return elements;
   };
 
-  const getMobileElements = (): JSX.Element[] => {
+  const getMobileElements = (): React.ReactNode => {
     const elements = HeaderLinks.map(
       ({ url, name, id, classNames: { mobile: className }, external }) => (
         <li key={`m-elm-${id}`}>

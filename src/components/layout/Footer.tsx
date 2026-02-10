@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { BsInstagram } from 'react-icons/bs';
 import { FooterSocialLink } from '@/types/boilerplate.types';
 
-function Footer(): JSX.Element {
+function Footer(): React.ReactNode {
   const FooterSocialLinks: FooterSocialLink[] = [
     {
       id: 0,
@@ -13,7 +13,7 @@ function Footer(): JSX.Element {
     },
   ];
 
-  const getSocialLinks = (): JSX.Element[] => {
+  const getSocialLinks = (): React.ReactNode => {
     const elements = FooterSocialLinks.map(({ id, url, icon: Icon }) => (
       <li key={`fs-elm-${id}`}>
         <a href={url} target="_blank" rel="noreferrer">

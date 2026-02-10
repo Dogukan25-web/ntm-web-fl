@@ -19,7 +19,7 @@ const DefaultProps: CustomIconProps = {
   color: 'currentColor',
 };
 
-function LogoAsIcon(props: CustomIconProps): JSX.Element {
+function LogoAsIcon(props: CustomIconProps): React.ReactNode {
   return (
     <svg viewBox="0 0 2620 514" {...DefaultProps} {...props}>
       <g clipPath="url(#clip0_2006_128)">

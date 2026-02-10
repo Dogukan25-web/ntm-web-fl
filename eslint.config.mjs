@@ -23,11 +23,18 @@ export default [
   {
     ignores: [
       '**/next.config.js',
-      '**/postcss.config.mjs',
+      '**/postcss.config.js',
       '**/tailwind.config.js',
       '**/next-sitemap.config.js',
       '**/next-i18next.config.js',
       '**/eslint.config.mjs',
+      '**/**.config.js',
+      '**/**.config.mjs',
+      '**/.next/**',
+      '**/public/**',
+      '**/node_modules/**',
+      '**/.git/**',
+      '**/.vercel/**',
     ],
   },
   ...fixupConfigRules(
@@ -54,17 +61,14 @@ export default [
       globals: {
         ...globals.browser,
       },
-
       parser: tsParser,
       ecmaVersion: 'latest',
       sourceType: 'module',
-
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
         },
-
-        tsconfigRootDir: '.',
+        tsconfigRootDir: __dirname,
         project: ['tsconfig.json'],
         createDefaultProgram: true,
       },
