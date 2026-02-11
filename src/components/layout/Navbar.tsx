@@ -8,20 +8,11 @@ import { GiFoundryBucket } from 'react-icons/gi';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { MdShield } from 'react-icons/md';
 
-import {
-  NavbarLink,
-  MobileMenuProps,
-  NavbarClass,
-} from '@/types/boilerplate.types';
+import { MobileMenuProps } from '@/types/boilerplate.types';
 
 import { useTranslation } from 'next-i18next';
 
 import LogoAsIcon from '../misc/LogoAsIcon';
-
-const ClassNames: NavbarClass = {
-  desktop: 'text-current hover:text-white transition-all duration-200',
-  mobile: 'text-white',
-};
 
 function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
   const { t } = useTranslation();
@@ -61,53 +52,6 @@ export default function Navbar(): React.ReactNode {
   const { t } = useTranslation();
   const [scrolledDown, setScrolledDown] = React.useState<boolean>(false);
   const [mobileMenu, setMobileMenu] = React.useState<boolean>(false);
-
-  const HeaderLinks: NavbarLink[] = [
-    {
-      id: 0,
-      name: 'header.home',
-      url: '/',
-      classNames: ClassNames,
-    },
-    {
-      id: 1,
-      name: 'header.about',
-      url: '/about',
-      classNames: ClassNames,
-    },
-    {
-      id: 1,
-      name: 'header.products.main',
-      url: '/#products',
-      classNames: ClassNames,
-      subLinks: [
-        {
-          id: 11,
-          name: 'header.products.sub.recycling-systems',
-          url: '/products/recycling-systems',
-          classNames: ClassNames,
-        },
-        {
-          id: 12,
-          name: 'header.products.sub.foundry-systems',
-          url: '/products/foundry-systems',
-          classNames: ClassNames,
-        },
-        {
-          id: 13,
-          name: 'header.products.sub.defence-industry',
-          url: '/products/defence-industry',
-          classNames: ClassNames,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: 'header.contact',
-      url: '/contact',
-      classNames: ClassNames,
-    },
-  ];
 
   React.useEffect(() => {
     const handleResize = () => {
