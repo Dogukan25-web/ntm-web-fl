@@ -1,7 +1,9 @@
+import AOS from 'aos';
 import React from 'react';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 // ? Global styles
+import 'aos/dist/aos.css';
 import '@/styles/globals.css';
 import '@/styles/navbar.css';
 
@@ -22,6 +24,14 @@ import '@/styles/navbar.css';
 // });
 
 function App({ Component, pageProps }: AppProps) {
+  React.useEffect(() => {
+    AOS.init({
+      mirror: false,
+      offset: 250,
+      delay: 200,
+      duration: 750,
+    });
+  }, []);
   return (
     <>
       {/* 

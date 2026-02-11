@@ -23,7 +23,7 @@ function Banner() {
             style={{
               letterSpacing: '0.5em',
             }}
-            className="bg-yellow-300 p-2 text-xs text-black lg:text-sm"
+            className="bg-yellow-400 p-2 text-xs text-black lg:text-sm"
           >
             1980&apos;DEN BERİ MÜHENDİSLİKTE MÜKEMMELLİK
           </p>
@@ -39,7 +39,7 @@ function Banner() {
               style={{
                 letterSpacing: '0.1em',
               }}
-              className="text-md border border-yellow-300 bg-yellow-300 px-6 py-3 text-center font-bold text-black transition-all duration-300 hover:bg-white hover:text-black"
+              className="text-md border border-yellow-400 bg-yellow-400 px-6 py-3 text-center font-bold text-black transition-all duration-300 hover:bg-white hover:text-black"
             >
               TEKLİF AL
             </Link>

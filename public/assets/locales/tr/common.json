@@ -20,5 +20,13 @@
     },
     "contact": "İLETİŞİM",
     "quote": "TEKLİF AL"
+  },
+  "home": {
+    "counts": {
+      "experience": "YILLIK TECRÜBE",
+      "projects": "PROJE TAMAMLANDI",
+      "quality": "KALİTE BELGESİ",
+      "support": "TEKNİK DESTEK"
+    }
   }
 }
