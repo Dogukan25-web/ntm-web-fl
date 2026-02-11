@@ -3,7 +3,22 @@
     "default": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin.",
     "userNotFound": "Kullanıcı bulunamadı."
   },
-  "header": {
-    "home": "ANASAYFA"
+  "navbar": {
+    "home": "ANASAYFA",
+    "about": "HAKKIMIZDA",
+    "products": {
+      "main": "ÜRÜNLER",
+      "sub": {
+        "main": "HİZMETLERİMİZ",
+        "recycling-systems": "Geri Dönüşüm Sistemleri",
+        "recycling-systems-desc": "Atıkların ekonomiye kazandırılmasını sağlayan çevreci çözümler",
+        "foundry-systems": "Dökümhane Sistemleri",
+        "foundry-systems-desc": "Dökümhaneler için yenilikçi ve verimli çözümler",
+        "defence-industry": "Savunma Sanayi",
+        "defence-industry-desc": "Savunma sanayi için özel olarak tasarlanmış yüksek performanslı sistemler"
+      }
+    },
+    "contact": "İLETİŞİM",
+    "quote": "TEKLİF AL"
   }
 }

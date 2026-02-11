@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+@reference "./globals.css";
+
+.navbar {
+  &[data-scrolled='true'] {
+    @apply bg-black/50 text-zinc-200 shadow-md backdrop-blur-md;
+  }
+  @apply font-theme fixed top-0 left-0 z-10 flex w-full items-center justify-center bg-transparent text-zinc-300 backdrop-blur-none transition-colors duration-200 ease-in-out!;
+
+  & .logo {
+    @apply relative z-50 text-white transition-all duration-200 hover:scale-105;
+    & svg {
+      @apply w-full max-w-48;
+    }
+  }
+
+  > section {
+    @apply max-w-theme flex w-full items-center justify-between gap-5 p-5;
+  }
+
+  & .desktop-nav {
+    @apply hidden w-fit items-center justify-end gap-5 lg:flex;
+    > ul {
+      @apply flex w-fit items-center justify-end gap-8;
+    }
+
+    > ul > li {
+      @apply relative;
+      > a {
+        letter-spacing: 0.2em;
+        @apply text-sm text-zinc-200 transition-all duration-200 hover:text-white;
+
+        &.quote {
+          @apply border border-yellow-300 bg-yellow-300 px-4 py-2 text-center text-sm font-bold text-black transition-all duration-300 hover:bg-white hover:text-black;
+        }
+      }
+      &.group {
+        @apply relative;
+
+        > section {
+          @apply invisible absolute top-full right-0 w-full min-w-fit bg-transparent p-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100;
+          > section {
+            @apply relative flex w-full flex-wrap items-start justify-start bg-white shadow-xl;
+
+            > .triangle {
+              @apply absolute top-0 right-[4%] h-2 w-2 -translate-y-1/2 rotate-45 bg-white;
+            }
+
+            > section.submenu-header {
+              @apply flex w-full p-3;
+
+              > span {
+                @apply w-full border-b border-b-zinc-200 pb-3 text-left text-xs font-medium text-zinc-500;
+              }
+            }
+            > ul {
+              @apply flex w-full flex-col items-start justify-start gap-3 p-3 pt-0;
+              > li > a {
+                @apply m-0 flex w-full items-start justify-start gap-3 bg-zinc-100 p-3 text-zinc-600 transition-all duration-200 hover:bg-zinc-200 hover:text-yellow-600;
+                > svg {
+                  @apply mt-1 aspect-square h-6 w-6 text-yellow-500;
+                }
+                > section {
+                  @apply m-0 w-full p-0;
+
+                  > p:first-child {
+                    @apply whitespace-nowrap;
+                  }
+                  > p:not(:first-child) {
+                    @apply min-w-sm text-xs text-zinc-400;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & button.menu-button {
+    @apply z-100 flex max-w-fit items-center justify-center lg:hidden;
+    > svg {
+      @apply h-8 w-8 rotate-0 text-center text-white transition-all duration-500;
+    }
+
+    &[data-menu-active='true'] {
+      > svg {
+        @apply rotate-180;
+      }
+    }
+  }
+}
+
+.mobile-navbar {
+  &[data-active='true'] {
+    @apply translate-x-0;
+  }
+  @apply font-theme fixed top-0 left-0 z-9 flex h-full w-full translate-x-full flex-col items-center justify-start bg-black/90 px-5 backdrop-blur-lg transition-all duration-500 lg:hidden;
+  > ul {
+    @apply flex h-full w-full flex-col items-center justify-center gap-10 overflow-y-auto py-37.5;
+    > li {
+      letter-spacing: 0.2em;
+      @apply text-sm text-zinc-200 transition-all duration-200 hover:text-white;
+      > .quote {
+        @apply border border-yellow-300 bg-yellow-300 px-4 py-2 text-center text-sm font-bold text-black transition-all duration-150 hover:bg-white hover:text-black;
+      }
+    }
+  }
+}

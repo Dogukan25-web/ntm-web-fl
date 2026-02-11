@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 // ? Global styles
 import '@/styles/globals.css';
+import '@/styles/navbar.css';
 
 // * Local font implementation with @next/font/local - #1
 //

@@ -16,11 +16,11 @@ export interface NavbarLink {
   url: string;
   classNames: NavbarClass;
   external?: boolean;
+  subLinks?: NavbarLink[];
 }
 
 export interface MobileMenuProps {
   isActive: boolean;
-  children?: any;
 }
 
 export interface FooterSocialLink {
