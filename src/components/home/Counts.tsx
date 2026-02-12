@@ -7,7 +7,7 @@ function Counts() {
     <section className="font-theme flex w-full flex-wrap items-center justify-center bg-yellow-400">
       <ul
         data-aos="fade-in"
-        className="max-w-theme m-0 flex w-full flex-col flex-wrap items-center justify-center gap-10 p-0 px-5 py-20 lg:flex-row lg:items-start lg:justify-between"
+        className="max-w-theme m-0 flex w-full flex-col flex-wrap items-center justify-center gap-10 px-5 py-20 lg:flex-row lg:items-start lg:justify-between"
       >
         <li className="flex flex-col items-center justify-center gap-0 lg:items-start">
           <p className="text-3xl font-bold lg:text-5xl">25+</p>

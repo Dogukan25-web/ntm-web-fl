@@ -7,6 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Banner from '@/components/home/Banner';
 import Counts from '@/components/home/Counts';
 import Products from '@/components/home/Products';
+import MiniAbout from '@/components/home/MiniAbout';
 
 export default function Home(): React.ReactNode {
   return (
@@ -17,6 +18,7 @@ export default function Home(): React.ReactNode {
         <Banner />
         <Counts />
         <Products />
+        <MiniAbout />
       </main>
       <Footer />
     </>
