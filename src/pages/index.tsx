@@ -8,6 +8,7 @@ import Banner from '@/components/home/Banner';
 import Counts from '@/components/home/Counts';
 import Products from '@/components/home/Products';
 import MiniAbout from '@/components/home/MiniAbout';
+import References from '@/components/home/References';
 
 export default function Home(): React.ReactNode {
   return (
@@ -19,6 +20,7 @@ export default function Home(): React.ReactNode {
         <Counts />
         <Products />
         <MiniAbout />
+        <References />
       </main>
       <Footer />
     </>
