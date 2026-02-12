@@ -26,7 +26,7 @@ import '@/styles/navbar.css';
 function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
     AOS.init({
-      mirror: false,
+      once: true,
       offset: 250,
       delay: 200,
       duration: 750,

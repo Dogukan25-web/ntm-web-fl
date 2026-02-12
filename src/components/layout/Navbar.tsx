@@ -3,16 +3,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { motion } from 'motion/react';
 
-import { FaRecycle } from 'react-icons/fa';
-import { GiFoundryBucket } from 'react-icons/gi';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { MdShield } from 'react-icons/md';
+import { CiMenuFries } from 'react-icons/ci';
 
 import { MobileMenuProps } from '@/types/boilerplate.types';
 
 import { useTranslation } from 'next-i18next';
 
 import LogoAsIcon from '../misc/LogoAsIcon';
+import { ProductCategories } from '../home/Products';
 
 function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
   const { t } = useTranslation();
@@ -131,41 +129,23 @@ export default function Navbar(): React.ReactNode {
                       <span>{t('navbar.products.sub.main')}</span>
                     </section>
                     <ul>
-                      <li>
-                        <Link href="/products/recycling-systems">
-                          <FaRecycle />
-                          <section>
-                            <p className="">
-                              {t('navbar.products.sub.recycling-systems')}
-                            </p>
-                            <p>
-                              {t('navbar.products.sub.recycling-systems-desc')}
-                            </p>
-                          </section>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/products/foundry-systems">
-                          <GiFoundryBucket />
-                          <section>
-                            <p>{t('navbar.products.sub.foundry-systems')}</p>
-                            <p>
-                              {t('navbar.products.sub.foundry-systems-desc')}
-                            </p>
-                          </section>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/products/defence-industry">
-                          <MdShield />
-                          <section>
-                            <p>{t('navbar.products.sub.defence-industry')}</p>
-                            <p>
-                              {t('navbar.products.sub.defence-industry-desc')}
-                            </p>
-                          </section>
-                        </Link>
-                      </li>
+                      {ProductCategories.map((product) => (
+                        <li key={`nav-p-ct-${product.id}`}>
+                          <Link href={`/products/${product.slug}`}>
+                            <product.icon />
+                            <section>
+                              <p className="">
+                                {t(`${product.slug}.title`, { ns: 'products' })}
+                              </p>
+                              <p>
+                                {t(`${product.slug}.short-desc`, {
+                                  ns: 'products',
+                                })}
+                              </p>
+                            </section>
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </section>
                 </section>
@@ -186,7 +166,7 @@ export default function Navbar(): React.ReactNode {
             data-menu-active={mobileMenu}
             onClick={() => setMobileMenu(!mobileMenu)}
           >
-            <HiOutlineMenuAlt3 />
+            <CiMenuFries />
           </button>
         </section>
       </motion.header>

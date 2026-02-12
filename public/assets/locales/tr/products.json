@@ -1,0 +1,15 @@
+{
+  "recycling-systems": {
+    "title": "Geri Dönüşüm Sistemleri",
+    "short-desc": "Atıkların ekonomiye kazandırılmasını sağlayan çevreci çözümler"
+  },
+  "foundry-systems": {
+    "title": "Dökümhane Sistemleri",
+    "short-desc": "Dökümhaneler için yenilikçi ve verimli çözümler"
+  },
+  "defence-industry": {
+    "title": "Savunma Sanayi",
+    "short-desc": "Savunma sanayi için özel olarak tasarlanmış yüksek performanslı sistemler"
+  },
+  "see-all-btn": "Tümünü Gör"
+}

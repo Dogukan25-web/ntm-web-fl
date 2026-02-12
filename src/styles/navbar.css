@@ -8,9 +8,9 @@
   @apply font-theme fixed top-0 left-0 z-10 flex w-full items-center justify-center bg-transparent text-zinc-300 backdrop-blur-none transition-colors duration-200 ease-in-out!;
 
   & .logo {
-    @apply relative z-50 text-white transition-all duration-200 hover:scale-105;
+    @apply relative z-50 transition-all duration-200 hover:scale-105;
     & svg {
-      @apply w-full max-w-48;
+      @apply w-full max-w-48 text-white;
     }
   }
 
