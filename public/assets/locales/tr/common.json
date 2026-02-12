@@ -40,5 +40,16 @@
       "title": "İLETİŞİM",
       "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
     }
+  },
+  "footer": {
+    "quick-links": "HIZLI ERİŞİM",
+    "company": {
+      "title": "KURUMSAL",
+      "certificates": "SERTİFİKALAR",
+      "kvkk-policy": "KVKK POLİTİKASI",
+      "privacy-policy": "GİZLİLİK POLİTİKASI",
+      "terms-of-service": "HİZMET ŞARTLARI"
+    },
+    "contact-us": "BİZE ULAŞIN"
   }
 }
