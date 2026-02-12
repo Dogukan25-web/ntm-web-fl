@@ -9,7 +9,10 @@ function MiniAbout() {
   return (
     <section className="font-theme relative grid w-full grid-cols-1 bg-zinc-950">
       <section className="z-2 flex h-full w-full items-center justify-center bg-linear-to-r from-zinc-950 to-zinc-950/70 py-20">
-        <section className="max-w-theme flex w-full flex-col">
+        <section
+          data-aos="fade-in"
+          className="max-w-theme flex w-full flex-col"
+        >
           <section className="flex w-full max-w-2xl flex-col items-start justify-start gap-10 px-5">
             <h2
               style={{

@@ -9,6 +9,7 @@ import Counts from '@/components/home/Counts';
 import Products from '@/components/home/Products';
 import MiniAbout from '@/components/home/MiniAbout';
 import References from '@/components/home/References';
+import CTA from '@/components/misc/CTA';
 
 export default function Home(): React.ReactNode {
   return (
@@ -21,6 +22,7 @@ export default function Home(): React.ReactNode {
         <Products />
         <MiniAbout />
         <References />
+        <CTA />
       </main>
       <Footer />
     </>

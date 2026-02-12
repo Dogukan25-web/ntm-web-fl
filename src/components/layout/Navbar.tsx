@@ -37,7 +37,7 @@ function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
         </li>
         <li>
           <Link className="quote" href="/#quote">
-            {t('navbar.quote')}
+            {t('global-buttons.quote')}
           </Link>
         </li>
       </ul>
@@ -155,7 +155,7 @@ export default function Navbar(): React.ReactNode {
               </li>
               <li>
                 <Link href="/#quote" className="quote">
-                  {t('navbar.quote')}
+                  {t('global-buttons.quote')}
                 </Link>
               </li>
             </ul>

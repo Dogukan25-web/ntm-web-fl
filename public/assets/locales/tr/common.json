@@ -3,6 +3,11 @@
     "default": "Bir şeyler yanlış gitti. Lütfen daha sonra tekrar deneyin.",
     "userNotFound": "Kullanıcı bulunamadı."
   },
+  "global-buttons": {
+    "quote": "TEKLİF AL",
+    "call-us": "BİZİ ARAYIN",
+    "view-products": "ÜRÜNLERİ İNCELE"
+  },
   "navbar": {
     "home": "ANASAYFA",
     "about": "HAKKIMIZDA",
@@ -16,6 +21,11 @@
     "quote": "TEKLİF AL"
   },
   "home": {
+    "banner": {
+      "mini": "1980'DEN BERİ MÜHENDİSLİKTE MÜKEMMELLİK",
+      "main": "AĞIR SANAYİ MAKİNA \nVE METAL GERİ DÖNÜŞÜM SİSTEMLERİ",
+      "content": "Endüstriyel Tesisler İçin Mühendislik, Üretim ve Kurulum Çözümleri"
+    },
     "counts": {
       "experience": "YILLIK TECRÜBE",
       "projects": "PROJE TAMAMLANDI",
@@ -25,6 +35,10 @@
     "mini-about": {
       "content": "Nuri Teknik Makina, 1980 yılında ağır sanayi ve endüstriyel makine üretimi alanında faaliyet göstermek üzere kurulmuştur. Metal geri dönüşüm, dökümhane sistemleri ve endüstriyel otomasyon çözümleri konusunda uzmanlaşarak, tesislere özel mühendislik, imalat ve kurulum hizmetleri sunmaktadır. Deneyimli kadrosu ve üretim altyapısı ile yurt içi ve yurt dışında güvenilir, uzun ömürlü ve yüksek performanslı endüstriyel sistemler geliştirmektedir",
       "more": "HAKKIMIZDA DAHA FAZLA >"
+    },
+    "cta": {
+      "title": "İLETİŞİM",
+      "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
     }
   }
 }

@@ -60,6 +60,7 @@ function ProductCard({ product }: { product: ProductCategory }) {
 }
 
 function Products() {
+  const { t } = useTranslation();
   return (
     <section className="font-theme flex w-full items-center justify-center bg-white py-20">
       <section
@@ -73,10 +74,10 @@ function Products() {
             }}
             className="text-xs font-medium text-yellow-500 uppercase lg:text-sm"
           >
-            UZMANLIK ALANLARIMIZ
+            {t('mini', { ns: 'products' })}
           </span>
           <span className="text-xl font-bold text-black lg:text-3xl">
-            ÜRÜNLER VE ÇÖZÜMLERİMİZ
+            {t('title', { ns: 'products' })}
           </span>
         </h2>
         <ul className="grid h-full w-full grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-2">

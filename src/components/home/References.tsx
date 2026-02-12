@@ -41,7 +41,10 @@ const allReferences = [
 
 function References() {
   return (
-    <section className="m-0 flex w-full items-center justify-center overflow-hidden p-0 py-20">
+    <section
+      data-aos="fade-in"
+      className="m-0 flex w-full items-center justify-center overflow-hidden p-0 py-20"
+    >
       <Swiper
         loop
         autoplay={{
