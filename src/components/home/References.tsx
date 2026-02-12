@@ -50,36 +50,45 @@ function References() {
         }}
         modules={[Autoplay]}
         centeredSlides
-        spaceBetween={75}
         scrollbar={false}
-        slidesPerView={3}
+        slidesPerView={1}
+        spaceBetween={10}
+        className="w-full"
         breakpoints={{
-          640: {
+          '@0.00': {
             slidesPerView: 2,
+            spaceBetween: 20,
           },
-          768: {
+          '@0.75': {
             slidesPerView: 2,
+            spaceBetween: 30,
           },
-          1024: {
-            slidesPerView: 3,
+          '@1.00': {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          '@1.50': {
+            slidesPerView: 5,
+            spaceBetween: 50,
           },
         }}
       >
-        {allReferences.map((ref) => (
+        {[...allReferences, ...allReferences].map((ref, key) => (
           <SwiperSlide
-            key={`ref-${ref.id}`}
+            // eslint-disable-next-line react/no-array-index-key
+            key={`ref-${ref.id}-${key}`}
             className="flex! h-full min-h-[100px] w-full items-center justify-center"
           >
             <a
               href={ref.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inset-0 m-0 flex w-full max-w-[150px] items-center justify-center p-0 grayscale-100 transition-all duration-200 hover:grayscale-0"
+              className="inset-0 m-0 flex h-fit w-fit items-center justify-center p-0 grayscale-100 transition-all duration-200 hover:grayscale-0"
             >
               <img
+                className="w-full max-w-[125px]"
                 alt={`Reference ${ref.id}`}
                 src={ref.img}
-                className="w-full"
               />
             </a>
           </SwiperSlide>
