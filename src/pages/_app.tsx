@@ -6,6 +6,7 @@ import { appWithTranslation } from 'next-i18next';
 import 'aos/dist/aos.css';
 import '@/styles/globals.css';
 import '@/styles/navbar.css';
+import Loader from '@/components/layout/Loader';
 
 // * Local font implementation with @next/font/local - #1
 //
@@ -56,6 +57,7 @@ function App({ Component, pageProps }: AppProps) {
       //  </Script> 
       */}
       <Component {...pageProps} />
+      <Loader />
     </>
   );
 }

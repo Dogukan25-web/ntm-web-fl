@@ -43,7 +43,7 @@ function References() {
   return (
     <section
       data-aos="fade-in"
-      className="m-0 flex w-full items-center justify-center overflow-hidden p-0 py-20"
+      className="m-0 flex w-full items-center justify-center overflow-hidden bg-white p-0 py-20"
     >
       <Swiper
         loop

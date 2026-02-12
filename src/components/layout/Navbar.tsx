@@ -13,7 +13,11 @@ import LogoAsIcon from '../misc/LogoAsIcon';
 import { ProductCategories } from '../home/Products';
 
 function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
-  const { t } = useTranslation();
+  const Router = useRouter();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
   return (
     <nav data-active={isActive} className="mobile-navbar">
       <ul>
@@ -40,6 +44,15 @@ function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
             {t('global-buttons.quote')}
           </Link>
         </li>
+        <li>
+          <Link
+            href={Router.asPath}
+            className="text-2xl!"
+            locale={language === 'en' ? 'tr' : 'en'}
+          >
+            {language === 'en' ? '🇹🇷' : '🇬🇧'}
+          </Link>
+        </li>
       </ul>
     </nav>
   );
@@ -47,7 +60,11 @@ function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
 
 export default function Navbar(): React.ReactNode {
   const Router = useRouter();
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+
   const [scrolledDown, setScrolledDown] = React.useState<boolean>(false);
   const [mobileMenu, setMobileMenu] = React.useState<boolean>(false);
 
@@ -156,6 +173,15 @@ export default function Navbar(): React.ReactNode {
               <li>
                 <Link href="/#quote" className="quote">
                   {t('global-buttons.quote')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={Router.asPath}
+                  className="text-2xl!"
+                  locale={language === 'en' ? 'tr' : 'en'}
+                >
+                  {language === 'en' ? '🇹🇷' : '🇬🇧'}
                 </Link>
               </li>
             </ul>

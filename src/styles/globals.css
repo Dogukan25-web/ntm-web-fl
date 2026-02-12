@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @config "../../tailwind.config.js";
 
+body {
+  @apply bg-black;
+}
+
 * {
   scroll-behavior: smooth !important;
 }
