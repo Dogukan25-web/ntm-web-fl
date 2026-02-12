@@ -2,15 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
-import BannerImg from '@/public/assets/img/banner.webp';
 import { FaRecycle } from 'react-icons/fa';
 import { GiFoundryBucket } from 'react-icons/gi';
-import { MdShield } from 'react-icons/md';
+
+import RecyclingBanner from '@/public/assets/img/recycling-banner.webp';
+import FoundryBanner from '@/public/assets/img/foundry-banner.webp';
 
 export interface ProductCategory {
   id: number;
   icon: React.ElementType;
   slug: string;
+  img?: string;
 }
 
 export const ProductCategories: ProductCategory[] = [
@@ -18,16 +20,13 @@ export const ProductCategories: ProductCategory[] = [
     id: 0,
     icon: FaRecycle,
     slug: 'recycling-systems',
+    img: RecyclingBanner.src,
   },
   {
     id: 1,
     icon: GiFoundryBucket,
     slug: 'foundry-systems',
-  },
-  {
-    id: 2,
-    icon: MdShield,
-    slug: 'defence-industry',
+    img: FoundryBanner.src,
   },
 ];
 
@@ -37,17 +36,16 @@ function ProductCard({ product }: { product: ProductCategory }) {
   const Icon = product.icon;
 
   return (
-    <li className="product-card group">
-      <Link
-        href={`/products/${product.slug}`}
-        className="flex h-full w-full items-center justify-center"
-      >
-        <img
-          alt={t(`${product.slug}.title`, { ns: 'products' })}
-          src={BannerImg.src}
-        />
+    <li className="product-card group relative m-0 p-0">
+      <Link href={`/products/${product.slug}`}>
+        {product.img && (
+          <img
+            alt={t(`${product.slug}.title`, { ns: 'products' })}
+            src={product.img}
+          />
+        )}
         <div className="tint" />
-        <section className="z-2">
+        <section>
           <Icon />
           <h3>{t(`${product.slug}.title`, { ns: 'products' })}</h3>
           <p>{t(`${product.slug}.short-desc`, { ns: 'products' })}</p>
@@ -64,7 +62,10 @@ function ProductCard({ product }: { product: ProductCategory }) {
 function Products() {
   return (
     <section className="font-theme flex w-full items-center justify-center bg-white py-20">
-      <section className="lg:max-w-theme flex w-full max-w-lg flex-col items-start justify-start gap-10 px-5">
+      <section
+        data-aos="fade-in"
+        className="lg:max-w-theme flex w-full max-w-lg flex-col items-start justify-start gap-10 px-5"
+      >
         <h2 className="flex flex-col items-start justify-start gap-2">
           <span
             style={{
@@ -78,7 +79,7 @@ function Products() {
             ÜRÜNLER VE ÇÖZÜMLERİMİZ
           </span>
         </h2>
-        <ul className="grid w-full grid-cols-1 gap-0 gap-1 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid h-full w-full grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-2">
           {ProductCategories.map((product) => (
             <ProductCard key={`p-ct-${product.id}`} product={product} />
           ))}

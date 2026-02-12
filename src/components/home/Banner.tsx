@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'motion/react';
 
-import BGImage from '@/public/assets/img/banner.webp';
+import BGImage from '@/public/assets/img/recycling-banner.webp';
 
 function Banner() {
   return (
