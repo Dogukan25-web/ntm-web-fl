@@ -1,6 +1,13 @@
 {
   "mini": "UZMANLIK ALANLARIMIZ",
   "title": "ÜRÜNLER VE ÇÖZÜMLERİMİZ",
+  "meta": {
+    "title": "NTM | Ürünler ve Çözümlerimiz",
+    "description": "NTM'nin sunduğu ürünler ve çözümler hakkında bilgi edinin."
+  },
+  "hero": {
+    "title": "ÜRÜNLER"
+  },
   "recycling-systems": {
     "title": "Geri Dönüşüm Sistemleri",
     "short-desc": "Atıkların ekonomiye kazandırılmasını sağlayan çevreci çözümler"
@@ -9,5 +16,6 @@
     "title": "Dökümhane Sistemleri",
     "short-desc": "Dökümhaneler için yenilikçi ve verimli çözümler"
   },
-  "see-all-btn": "Tümünü Gör"
+  "see-all-btn": "Tümünü Gör",
+  "search-placeholder": "Ürünlerde ara..."
 }

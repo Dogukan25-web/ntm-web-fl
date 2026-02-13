@@ -37,8 +37,8 @@ function Footer(): React.ReactNode {
         <ul className="grid w-full grid-cols-1 place-content-start gap-10 md:grid-cols-2 lg:grid-cols-5">
           <li className="inset-0 m-0 flex w-full flex-col gap-5 p-0 lg:col-span-2">
             <Link
-              className="m-0 flex w-fit flex-row items-start justify-start p-0 transition-all duration-200 hover:scale-105"
               href="/"
+              className="m-0 flex w-fit flex-row items-start justify-start p-0 transition-all duration-200 hover:scale-105"
             >
               <LogoAsIcon className="w-full max-w-48 text-white" />
             </Link>
@@ -75,7 +75,7 @@ function Footer(): React.ReactNode {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/about"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('navbar.about')}
@@ -83,7 +83,7 @@ function Footer(): React.ReactNode {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/products"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('navbar.products.main')}
@@ -91,7 +91,7 @@ function Footer(): React.ReactNode {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/contact"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('navbar.contact')}
@@ -106,7 +106,7 @@ function Footer(): React.ReactNode {
             <ul className="flex flex-col items-start justify-start gap-2">
               <li>
                 <Link
-                  href="/"
+                  href="/about#certificates"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('footer.company.certificates')}
@@ -114,7 +114,7 @@ function Footer(): React.ReactNode {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/kvkk-policy"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('footer.company.kvkk-policy')}
@@ -122,7 +122,7 @@ function Footer(): React.ReactNode {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/privacy-policy"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('footer.company.privacy-policy')}
@@ -130,7 +130,7 @@ function Footer(): React.ReactNode {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/terms-of-service"
                   className="text-xs text-zinc-400 transition-colors duration-200 hover:text-white"
                 >
                   {t('footer.company.terms-of-service')}

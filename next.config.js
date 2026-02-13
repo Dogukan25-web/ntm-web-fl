@@ -5,6 +5,7 @@ const subPathPrefix = process.env.NEXT_PUBLIC_APP_SUBPATH_PREFIX || '';
 
 module.exports = {
   i18n,
+  trailingSlash: true,
   reactStrictMode: true,
   basePath: subPathPrefix,
 };

@@ -32,7 +32,7 @@ function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
         </li>
 
         <li>
-          <Link href="/#products">{t('navbar.products.main')}</Link>
+          <Link href="/products">{t('navbar.products.main')}</Link>
         </li>
 
         <li>
@@ -137,7 +137,7 @@ export default function Navbar(): React.ReactNode {
                 <Link href="/about">{t('navbar.about')}</Link>
               </li>
               <li className="group">
-                <Link href="/#products">{t('navbar.products.main')}</Link>
+                <Link href="/products">{t('navbar.products.main')}</Link>
                 <section>
                   <section>
                     <span className="triangle" />
