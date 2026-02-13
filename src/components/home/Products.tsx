@@ -37,7 +37,8 @@ function ProductCard({ product }: { product: ProductCategory }) {
 
   return (
     <li className="product-card group relative m-0 p-0">
-      <Link href={`/products/${product.slug}`}>
+      {/* <Link href={`/products/${product.slug}`}> */}
+      <Link href="/products">
         {product.img && (
           <img
             alt={t(`${product.slug}.title`, { ns: 'products' })}
@@ -62,7 +63,10 @@ function ProductCard({ product }: { product: ProductCategory }) {
 function Products() {
   const { t } = useTranslation();
   return (
-    <section className="font-theme flex w-full items-center justify-center bg-white py-20">
+    <section
+      id="products"
+      className="font-theme flex w-full items-center justify-center bg-white py-20"
+    >
       <section
         data-aos="fade-in"
         className="lg:max-w-theme flex w-full max-w-lg flex-col items-start justify-start gap-10 px-5"

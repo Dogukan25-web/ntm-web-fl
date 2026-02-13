@@ -1,13 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { motion } from 'motion/react';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 
 import { CiMenuFries } from 'react-icons/ci';
 
 import { MobileMenuProps } from '@/types/boilerplate.types';
-
-import { useTranslation } from 'next-i18next';
 
 import LogoAsIcon from '../misc/LogoAsIcon';
 import { ProductCategories } from '../home/Products';
@@ -148,7 +147,8 @@ export default function Navbar(): React.ReactNode {
                     <ul>
                       {ProductCategories.map((product) => (
                         <li key={`nav-p-ct-${product.id}`}>
-                          <Link href={`/products/${product.slug}`}>
+                          {/* <Link href={`/products/${product.slug}`}> */}
+                          <Link href="/products">
                             <product.icon />
                             <section>
                               <p className="">
@@ -171,14 +171,14 @@ export default function Navbar(): React.ReactNode {
                 <Link href="/contact">{t('navbar.contact')}</Link>
               </li>
               <li>
-                <Link href="/#quote" className="quote">
+                <Link href="/request-quote" className="quote">
                   {t('global-buttons.quote')}
                 </Link>
               </li>
               <li>
                 <Link
                   href={Router.asPath}
-                  className="text-2xl!"
+                  className="text-xl!"
                   locale={language === 'en' ? 'tr' : 'en'}
                 >
                   {language === 'en' ? '🇹🇷' : '🇬🇧'}
