@@ -21,6 +21,10 @@
     "quote": "TEKLİF AL"
   },
   "home": {
+    "meta": {
+      "title": "NTM | NURİMAK Teknik Makina",
+      "description": "Nuri Teknik Makina, 1980 yılından beri ağır sanayi makine üretimi ve metal geri dönüşüm sistemleri konusunda uzmanlaşmış bir mühendislik firmasıdır. Endüstriyel tesisler için özel çözümler sunar."
+    },
     "banner": {
       "mini": "1980'DEN BERİ MÜHENDİSLİKTE MÜKEMMELLİK",
       "main": "AĞIR SANAYİ MAKİNA \nVE METAL GERİ DÖNÜŞÜM SİSTEMLERİ",
@@ -32,14 +36,42 @@
       "quality": "KALİTE BELGESİ",
       "support": "TEKNİK DESTEK"
     },
-    "mini-about": {
-      "content": "Nuri Teknik Makina, 1980 yılında ağır sanayi ve endüstriyel makine üretimi alanında faaliyet göstermek üzere kurulmuştur. Metal geri dönüşüm, dökümhane sistemleri ve endüstriyel otomasyon çözümleri konusunda uzmanlaşarak, tesislere özel mühendislik, imalat ve kurulum hizmetleri sunmaktadır. Deneyimli kadrosu ve üretim altyapısı ile yurt içi ve yurt dışında güvenilir, uzun ömürlü ve yüksek performanslı endüstriyel sistemler geliştirmektedir",
-      "more": "HAKKIMIZDA DAHA FAZLA >"
-    },
     "cta": {
       "title": "İLETİŞİM",
       "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
     }
+  },
+  "about": {
+    "meta": {
+      "title": "NTM | Hakkımızda",
+      "description": "Nuri Teknik Makina, 1980 yılından beri ağır sanayi makine üretimi ve metal geri dönüşüm sistemleri konusunda uzmanlaşmış bir mühendislik firmasıdır. Endüstriyel tesisler için özel çözümler sunar."
+    },
+    "hero": {
+      "title": "HAKKIMIZDA"
+    },
+    "desc": {
+      "mini": "TECRÜBE",
+      "title": "NURİMAK TEKNİK MAKİNA",
+      "content": "Nuri Teknik Makina, 1980 yılında ağır sanayi ve endüstriyel makine üretimi alanında faaliyet göstermek üzere kurulmuştur. Metal geri dönüşüm, dökümhane sistemleri ve endüstriyel otomasyon çözümleri konusunda uzmanlaşarak, tesislere özel mühendislik, imalat ve kurulum hizmetleri sunmaktadır. Deneyimli kadrosu ve üretim altyapısı ile yurt içi ve yurt dışında güvenilir, uzun ömürlü ve yüksek performanslı endüstriyel sistemler geliştirmektedir."
+    },
+    "peoples": {
+      "mini": "UZMAN",
+      "title": "ÇALIŞAN KADROMUZ",
+      "roles": {
+        "technical-responsible": "Teknik Sorumlu"
+      }
+    },
+    "vision-mision": {
+      "vision": {
+        "title": "VİZYONUMUZ",
+        "content": "Metal geri dönüşüm ve ağır sanayi sektöründe, güvenilir ve uzun ömürlü endüstriyel sistemler geliştiren öncü bir mühendislik firması olmak. Teknolojik gelişmeleri yakından takip ederek, üretim kalitesi ve operasyonel verimlilik alanında sürekli iyileşme sağlamak. Yurt içi ve yurt dışında referanslarıyla tercih edilen, sürdürülebilir büyümeye sahip bir marka haline gelmek."
+      },
+      "mission": {
+        "title": "MİSYONUMUZ",
+        "content": "Müşterilerimizin ihtiyaçlarına uygun, yüksek performanslı ve dayanıklı endüstriyel makineler tasarlamak ve üretmek. Her projede mühendislik hesaplamalarına, kalite standartlarına ve saha koşullarına uygun çözümler sunmak. Satış sonrası teknik destek ve uzun vadeli iş ortaklığı anlayışıyla, projelerimizin tüm yaşam döngüsünde müşterilerimizin yanında olmak."
+      }
+    },
+    "more": "HAKKIMIZDA DAHA FAZLA >"
   },
   "footer": {
     "quick-links": "HIZLI ERİŞİM",

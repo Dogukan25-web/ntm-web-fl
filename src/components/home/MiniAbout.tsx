@@ -28,7 +28,7 @@ function MiniAbout() {
               </span>
             </h2>
             <p className="text-left text-sm text-zinc-200">
-              {t('home.mini-about.content')}
+              {t('about.desc.content')}
             </p>
             <Link
               href="/about"
@@ -37,7 +37,7 @@ function MiniAbout() {
               }}
               className="border border-white bg-transparent px-6 py-3 text-center text-sm font-normal text-white transition-all duration-300 hover:bg-white hover:text-black"
             >
-              {t('home.mini-about.more')}
+              {t('about.more')}
             </Link>
           </section>
         </section>

@@ -75,7 +75,7 @@ export default function Navbar(): React.ReactNode {
     };
 
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setScrolledDown(true);
       } else {
         setScrolledDown(false);

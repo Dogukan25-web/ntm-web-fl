@@ -30,7 +30,10 @@ function Footer(): React.ReactNode {
 
   return (
     <footer className="font-theme m-0 flex min-h-[100px] w-full flex-col flex-wrap items-center justify-center gap-0 border-t border-t-zinc-800 bg-stone-950 p-0">
-      <section className="max-w-theme flex h-full w-full items-center justify-center px-5 py-20">
+      <section
+        data-aos="fade-in"
+        className="max-w-theme flex h-full w-full items-center justify-center px-5 py-20"
+      >
         <ul className="grid w-full grid-cols-1 place-content-start gap-10 md:grid-cols-2 lg:grid-cols-5">
           <li className="inset-0 m-0 flex w-full flex-col gap-5 p-0 lg:col-span-2">
             <Link

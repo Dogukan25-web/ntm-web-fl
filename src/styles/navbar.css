@@ -3,7 +3,7 @@
 
 .navbar {
   &[data-scrolled='true'] {
-    @apply bg-black/50 text-zinc-200 shadow-md backdrop-blur-md;
+    @apply bg-black/70 text-zinc-200 shadow-md backdrop-blur-md;
   }
   @apply font-theme fixed top-0 left-0 z-10 flex w-full items-center justify-center bg-transparent text-zinc-300 backdrop-blur-none transition-colors duration-200 ease-in-out!;
 
