@@ -16,11 +16,12 @@ function Hero({ title, description }: Props) {
           style={{
             letterSpacing: '0.2em',
           }}
-          className="mt-10 flex flex-col items-start justify-start gap-3"
+          className="mt-10 flex flex-col items-start justify-start gap-1"
         >
-          <span className="border-l border-l-yellow-400 pl-4 text-2xl font-medium text-white lg:text-4xl">
+          <span className="border-l border-l-yellow-400 pl-4 text-2xl font-medium text-white uppercase lg:text-4xl">
             {title}
           </span>
+          <br />
           <span className="text-xs font-medium text-yellow-400 italic">
             NURİMAK TEKNİK MAKİNA
           </span>

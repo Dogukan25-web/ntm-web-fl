@@ -1,4 +1,32 @@
-const productCategories = [
+import MockIMG from '@/public/assets/img/recycling-banner.webp';
+import MockIMG2 from '@/public/assets/img/furnace-misc.webp';
+import MockIMG3 from '@/public/assets/img/foundry-banner.webp';
+
+export interface ProductCategory {
+  name: {
+    tr: string;
+    en: string;
+  };
+  slug: string;
+}
+
+export interface Product {
+  name: {
+    tr: string;
+    en: string;
+  };
+  category: {
+    name: {
+      tr: string;
+      en: string;
+    };
+    slug: string;
+  };
+  slug: string;
+  images?: string[];
+}
+
+const productCategories: ProductCategory[] = [
   {
     name: {
       tr: 'Demir Dışı Metal Ergitme ve Endüstriyel Fırınlar',
@@ -36,7 +64,7 @@ const productCategories = [
   },
 ];
 
-const products = [
+const products: Product[] = [
   {
     name: {
       tr: 'Devrilebilir Döner Fırın',
@@ -44,6 +72,7 @@ const products = [
     },
     category: productCategories[0],
     slug: 'tiltable-rotary-furnace',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -52,6 +81,7 @@ const products = [
     },
     category: productCategories[0],
     slug: 'reverber-furnace',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -60,6 +90,7 @@ const products = [
     },
     category: productCategories[0],
     slug: 'tiltable-pota-furnace',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -68,6 +99,7 @@ const products = [
     },
     category: productCategories[0],
     slug: 'copper-melting-system',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -76,6 +108,7 @@ const products = [
     },
     category: productCategories[1],
     slug: 'ingot-casting-system',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -84,6 +117,7 @@ const products = [
     },
     category: productCategories[1],
     slug: 'de-ox-casting-machine',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -92,6 +126,7 @@ const products = [
     },
     category: productCategories[1],
     slug: 't-ingot-sow-casting-line',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -100,6 +135,7 @@ const products = [
     },
     category: productCategories[2],
     slug: 'liquid-metal-pumps',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -108,6 +144,7 @@ const products = [
     },
     category: productCategories[2],
     slug: 'liquid-metal-mixers',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -116,6 +153,7 @@ const products = [
     },
     category: productCategories[2],
     slug: 'liquid-metal-transfer-systems',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -124,6 +162,7 @@ const products = [
     },
     category: productCategories[3],
     slug: 'briquetting-presses',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -132,6 +171,7 @@ const products = [
     },
     category: productCategories[3],
     slug: 'scrap-baling',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -140,6 +180,7 @@ const products = [
     },
     category: productCategories[4],
     slug: 'slag-presses',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
   {
     name: {
@@ -148,6 +189,7 @@ const products = [
     },
     category: productCategories[4],
     slug: 'slag-drum',
+    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
   },
 ];
 

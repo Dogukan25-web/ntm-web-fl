@@ -17,5 +17,9 @@
     "short-desc": "Dökümhaneler için yenilikçi ve verimli çözümler"
   },
   "see-all-btn": "Tümünü Gör",
-  "search-placeholder": "Ürünlerde ara..."
+  "search-placeholder": "Ürünlerde ara...",
+  "details-btn": "İNCELE >",
+  "product": {
+    "product-images": "ÜRÜN GÖRSELLERİ"
+  }
 }

@@ -37,7 +37,7 @@ function Banner() {
           </p>
           <section className="mt-10 flex w-full flex-wrap items-center justify-start gap-5">
             <Link
-              href="#contact"
+              href="/contact"
               style={{
                 letterSpacing: '0.1em',
               }}
@@ -46,7 +46,7 @@ function Banner() {
               {t('global-buttons.quote')}
             </Link>
             <Link
-              href="#contact"
+              href="/products"
               style={{
                 letterSpacing: '0.1em',
               }}

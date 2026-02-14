@@ -14,7 +14,7 @@ function FilteredProducts({
   categorySlug: string | null | 'FR';
   searchKeyword: string | null;
 }) {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const filteredProducts = React.useMemo(() => {
     let filtered = products;
@@ -74,7 +74,7 @@ function FilteredProducts({
                   }}
                   className="text-sm font-medium text-yellow-500"
                 >
-                  İNCELE {'>'}
+                  {t('details-btn', { ns: 'products' })}
                 </span>
               </section>
             </section>
@@ -95,12 +95,12 @@ function ProductGallery() {
   React.useEffect(() => {
     const ctSelectorList = document.querySelector('.categories-selector');
 
-    // if (window.scrollY > 300 && selectedCategory !== 'FR') {
-    //   const productsSection = document.getElementById('f-products');
-    //   productsSection?.scrollIntoView({
-    //     behavior: 'smooth',
-    //   });
-    // }
+    if (window.scrollY > 300 && selectedCategory !== 'FR') {
+      const productsSection = document.getElementById('f-products');
+      productsSection?.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
 
     if (ctSelectorList) {
       const selectedBtn = ctSelectorList.querySelector(
