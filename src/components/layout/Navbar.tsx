@@ -116,8 +116,8 @@ export default function Navbar(): React.ReactNode {
         initial={{ opacity: 0, y: -80 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 2,
-          delay: 0.2,
+          duration: 1,
+          delay: 0.1,
           ease: 'easeInOut',
         }}
         exit={{ opacity: 0, y: -80 }}
