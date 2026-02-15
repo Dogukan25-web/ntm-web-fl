@@ -73,6 +73,75 @@
     },
     "more": "HAKKIMIZDA DAHA FAZLA >"
   },
+  "contact": {
+    "meta": {
+      "title": "NTM | İletişim",
+      "description": "Nuri Teknik Makina, 1980 yılından beri ağır sanayi makine üretimi ve metal geri dönüşüm sistemleri konusunda uzmanlaşmış bir mühendislik firmasıdır. Endüstriyel tesisler için özel çözümler sunar."
+    },
+    "hero": {
+      "title": "İLETİŞİM"
+    },
+    "mini": "BİZE ULAŞIN",
+    "title": "İLETİŞİM FORMU",
+    "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
+  },
+  "quote": {
+    "meta": {
+      "title": "NTM | Teklif Al",
+      "description": "Nuri Teknik Makina, 1980 yılından beri ağır sanayi makine üretimi ve metal geri dönüşüm sistemleri konusunda uzmanlaşmış bir mühendislik firmasıdır. Endüstriyel tesisler için özel çözümler sunar."
+    },
+    "hero": {
+      "title": "TEKLİF AL"
+    },
+    "mini": "TEKLİF TALEBİNDE BULUNUN",
+    "title": "TEKLİF FORMU",
+    "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
+  },
+  "forms": {
+    "name": {
+      "label": "İsim",
+      "placeholder": "İsminizi giriniz"
+    },
+    "surname": {
+      "label": "Soyisim",
+      "placeholder": "Soyisminizi giriniz"
+    },
+    "fullname": {
+      "label": "İsim Soyisim",
+      "placeholder": "İsim ve soyisminizi giriniz"
+    },
+    "company": {
+      "label": "Firma",
+      "placeholder": "Firma adınızı giriniz"
+    },
+    "email": {
+      "label": "E-posta",
+      "placeholder": "E-posta adresinizi giriniz"
+    },
+    "phone": {
+      "label": "Telefon",
+      "placeholder": "Telefon numaranızı giriniz"
+    },
+    "message": {
+      "label": "Mesaj",
+      "placeholder": "Mesajınızı giriniz"
+    },
+    "project": {
+      "label": "Proje Detayları",
+      "placeholder": "Projenizle ilgili detayları giriniz"
+    },
+    "submit": "GÖNDER",
+    "submitting": "GÖNDERİLİYOR...",
+    "error": {
+      "required": "Bu alan zorunludur.",
+      "email-invalid": "Geçersiz e-posta adresi.",
+      "phone-invalid": "Geçersiz telefon numarası."
+    },
+    "contact-success": "Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
+    "contact-fail": "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "quote-success": "Teklif talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
+    "quote-fail": "Teklif talebiniz gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+  },
   "footer": {
     "quick-links": "HIZLI ERİŞİM",
     "company": {

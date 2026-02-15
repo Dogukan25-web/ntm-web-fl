@@ -1,7 +1,9 @@
 import { Axios } from 'axios';
+import emailjs from '@emailjs/browser';
 import API from '@/common/configs/api.config';
-import { IApiClient, IClientResponse } from '@/types/boilerplate.types';
-import ClientError from '@/common/handlers/error.handler';
+import { IApiClient } from '@/types/boilerplate.types';
+import { QuoteFormData } from '@/components/forms/Quote.Form.';
+import { ContactFormData } from '@/components/forms/Contact.Form';
 
 class ApiClient implements IApiClient {
   public readonly API: Axios;
@@ -13,21 +15,67 @@ class ApiClient implements IApiClient {
     this.defaultError = 'errors.default';
   }
 
-  public async getCountries() {
+  public async sendContactMail(data: ContactFormData): Promise<{
+    success: boolean;
+    data?: any;
+    error?: {
+      message: string;
+      code?: string | number;
+    };
+  }> {
     try {
-      const { data } = await this.API.get('/countries').catch((error) => {
-        throw new ClientError(this.errorHandler(error));
-      });
+      const response = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID!,
+        data as Record<string, unknown>,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
 
       return {
-        data,
-        error: null,
-      } as IClientResponse<{ name: string }[], null>;
-    } catch (error: any) {
+        success: true,
+        data: response,
+      };
+    } catch (error) {
+      const { message, code } = this.errorHandler(error);
       return {
-        data: null,
-        error: error?.message || this.defaultError,
-      } as IClientResponse<null, string>;
+        success: false,
+        error: {
+          message,
+          code,
+        },
+      };
+    }
+  }
+
+  public async sendQuoteMail(data: QuoteFormData): Promise<{
+    success: boolean;
+    data?: any;
+    error?: {
+      message: string;
+      code?: string | number;
+    };
+  }> {
+    try {
+      const response = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_QUOTE_TEMPLATE_ID!,
+        data,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+
+      return {
+        success: true,
+        data: response,
+      };
+    } catch (error) {
+      const { message, code } = this.errorHandler(error);
+      return {
+        success: false,
+        error: {
+          message,
+          code,
+        },
+      };
     }
   }
 

@@ -12,6 +12,7 @@
     "lint": "yarn lint:format && yarn lint:fix"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@next/font": "^13.2.3",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
@@ -27,6 +28,7 @@
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.71.1",
     "react-i18next": "^16.5.4",
     "react-icons": "^4.7.1",
     "remark": "^15.0.1",

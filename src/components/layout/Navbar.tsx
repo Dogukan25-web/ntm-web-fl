@@ -39,7 +39,7 @@ function MobileMenu({ isActive }: MobileMenuProps): React.ReactNode {
           <Link href="/contact">{t('navbar.contact')}</Link>
         </li>
         <li>
-          <Link className="quote" href="/#quote">
+          <Link className="quote" href="/request-quote">
             {t('global-buttons.quote')}
           </Link>
         </li>
