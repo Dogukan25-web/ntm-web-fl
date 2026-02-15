@@ -1,23 +1,15 @@
 /* eslint-disable no-alert */
 import React from 'react';
 import { useTranslation } from 'next-i18next';
+import ErrorMsg from '@/components/forms/Error.Msg';
+import apiClient from '@/common/clients/api.client';
+import { ContactFormData } from '@/types/form.types';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 import { FaUserGear } from 'react-icons/fa6';
-import apiClient from '@/common/clients/api.client';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
-import ErrorMsg from './Error.Msg';
-
 export const trapSpacesForRequiredFields = (value) => !!value.trim();
-
-export type ContactFormData = {
-  name: string;
-  surname: string;
-  email: string;
-  phone: string;
-  message: string;
-};
 
 function ContactForm() {
   const {

@@ -2,8 +2,7 @@ import { Axios } from 'axios';
 import emailjs from '@emailjs/browser';
 import API from '@/common/configs/api.config';
 import { IApiClient } from '@/types/boilerplate.types';
-import { QuoteFormData } from '@/components/forms/Quote.Form.';
-import { ContactFormData } from '@/components/forms/Contact.Form';
+import { ContactFormData, QuoteFormData } from '@/types/form.types';
 
 class ApiClient implements IApiClient {
   public readonly API: Axios;

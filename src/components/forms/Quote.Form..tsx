@@ -1,27 +1,19 @@
 /* eslint-disable no-alert */
 import React from 'react';
 import { useTranslation } from 'next-i18next';
+import { QuoteFormData } from '@/types/form.types';
+import ErrorMsg from '@/components/forms/Error.Msg';
+import apiClient from '@/common/clients/api.client';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { trapSpacesForRequiredFields } from '@/components/forms/Contact.Form';
 
 import { FaUserGear, FaClockRotateLeft } from 'react-icons/fa6';
-
 import {
   FaWrench,
   FaCheckCircle,
   FaEnvelope,
   FaPhoneAlt,
 } from 'react-icons/fa';
-import { SubmitHandler, useForm } from 'react-hook-form';
-import apiClient from '@/common/clients/api.client';
-import { trapSpacesForRequiredFields } from './Contact.Form';
-import ErrorMsg from './Error.Msg';
-
-export type QuoteFormData = {
-  fullname: string;
-  company: string;
-  email: string;
-  phone: string;
-  project: string;
-};
 
 function QuoteForm() {
   const {
