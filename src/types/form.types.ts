@@ -4,6 +4,7 @@ export type ContactFormData = {
   email: string;
   phone: string;
   message: string;
+  kvkk: boolean;
 };
 
 export type QuoteFormData = {
@@ -12,4 +13,6 @@ export type QuoteFormData = {
   email: string;
   phone: string;
   project: string;
+  kvkk: boolean;
+  consent: boolean;
 };

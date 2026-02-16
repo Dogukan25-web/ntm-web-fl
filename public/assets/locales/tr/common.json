@@ -8,6 +8,17 @@
     "call-us": "BİZİ ARAYIN",
     "view-products": "ÜRÜNLERİ İNCELE"
   },
+  "policy": {
+    "popup-desc": "Web sitemizde, hizmet kalitesini artırmak ve site kullanımını analiz etmek amacıyla çerezler kullanılmaktadır.",
+    "explicit-consent": "AÇIK RIZA METNİ",
+    "privacy-policy": "GİZLİLİK POLİTİKASI",
+    "kvkk-policy": "KVKK POLİTİKASI",
+    "terms-of-service": "HİZMET ŞARTLARI",
+    "cookie-policy": "ÇEREZ POLİTİKASI",
+    "accept-all": "Tümünü Kabul Et",
+    "accept-necessary": "Yalnızca Gerekli Olanları Kabul Et",
+    "manage-consent": "Çerez Tercihlerini Yönet"
+  },
   "navbar": {
     "home": "ANASAYFA",
     "about": "HAKKIMIZDA",
@@ -146,10 +157,7 @@
     "quick-links": "HIZLI ERİŞİM",
     "company": {
       "title": "KURUMSAL",
-      "certificates": "SERTİFİKALAR",
-      "kvkk-policy": "KVKK POLİTİKASI",
-      "privacy-policy": "GİZLİLİK POLİTİKASI",
-      "terms-of-service": "HİZMET ŞARTLARI"
+      "certificates": "SERTİFİKALAR"
     },
     "contact-us": "BİZE ULAŞIN"
   }

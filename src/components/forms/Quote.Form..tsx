@@ -1,5 +1,6 @@
 /* eslint-disable no-alert */
 import React from 'react';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { QuoteFormData } from '@/types/form.types';
 import ErrorMsg from '@/components/forms/Error.Msg';
@@ -24,7 +25,7 @@ function QuoteForm() {
 
   const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const onSubmit: SubmitHandler<QuoteFormData> = async (data) => {
     const HP = document.querySelector('#requirements') as HTMLInputElement;
@@ -129,27 +130,36 @@ function QuoteForm() {
               </h3>
               <li className="m-0 p-0">
                 <a
-                  href="tel:+902126711100"
+                  href="tel:+902128777025"
                   className="flex flex-row items-start justify-start gap-2 text-xs hover:underline"
                 >
                   <FaPhoneAlt className="h-4 w-4 text-zinc-500" />
-                  <span className="text-zinc-500">+90 212 671 11 00</span>
+                  <span className="text-zinc-500">+90 (212) 877 70 25</span>
                 </a>
               </li>
               <li className="m-0 p-0">
                 <a
-                  href="mailto:info@example.com"
+                  href="tel:+905458533962"
+                  className="flex flex-row items-start justify-start gap-2 text-xs hover:underline"
+                >
+                  <FaPhoneAlt className="h-4 w-4 text-zinc-500" />
+                  <span className="text-zinc-500">+90 (545) 853 39 62</span>
+                </a>
+              </li>
+              <li className="m-0 p-0">
+                <a
+                  href="mailto:info@nurimakteknik.com"
                   className="flex flex-row items-start justify-start gap-2 text-xs hover:underline"
                 >
                   <FaEnvelope className="h-4 w-4 text-zinc-500" />
-                  <span className="text-zinc-500">info@example.com</span>
+                  <span className="text-zinc-500">info@nurimakteknik.com</span>
                 </a>
               </li>
             </ul>
           </section>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="grid h-full w-full grid-cols-1 place-content-start gap-10 bg-white p-5 lg:grid-cols-2 lg:p-10"
+            className="grid h-full w-full grid-cols-1 place-content-start gap-5 bg-white p-5 lg:grid-cols-2 lg:p-10"
           >
             <label
               htmlFor="name"
@@ -259,6 +269,97 @@ function QuoteForm() {
                 className="min-h-20 w-full border border-zinc-300 p-2 text-sm placeholder-zinc-300 ring-0! outline-0! transition-all duration-200 focus:border-yellow-400"
               />
               <ErrorMsg error={errors.project?.message} />
+            </label>
+            <label
+              htmlFor="kvkk"
+              className="col-span-full flex w-full flex-col items-start justify-start gap-1"
+            >
+              <div className="flex items-center gap-2">
+                <input
+                  id="kvkk"
+                  type="checkbox"
+                  {...register('kvkk', {
+                    required: t('forms.error.required'),
+                  })}
+                  className="form-checkbox h-4 w-4 border border-zinc-300 text-yellow-400 focus:ring-yellow-400"
+                />
+                <span className="text-sm text-zinc-500">
+                  {i18n.language === 'tr' ? (
+                    <>
+                      <Link
+                        href="/policy/kvkk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:underline"
+                      >
+                        KVKK Aydınlatma Metni
+                      </Link>
+                      {
+                        ' kapsamında kişisel verilerimin işlenmesini kabul ediyorum.'
+                      }
+                    </>
+                  ) : (
+                    <>
+                      I consent to the processing of my personal data in
+                      accordance with the{' '}
+                      <Link
+                        href="/policy/kvkk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:underline"
+                      >
+                        KVKK Disclosure Text
+                      </Link>
+                      .
+                    </>
+                  )}
+                </span>
+              </div>
+              <ErrorMsg error={errors.kvkk?.message} />
+            </label>
+            <label
+              htmlFor="consent"
+              className="col-span-full flex w-full flex-col items-start justify-start gap-1"
+            >
+              <div className="flex items-center gap-2">
+                <input
+                  id="consent"
+                  type="checkbox"
+                  {...register('consent', {
+                    required: t('forms.error.required'),
+                  })}
+                  className="form-checkbox h-4 w-4 border border-zinc-300 text-yellow-400 focus:ring-yellow-400"
+                />
+                <span className="text-sm text-zinc-500">
+                  {i18n.language === 'tr' ? (
+                    <>
+                      <Link
+                        href="/policy/explicit-consent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:underline"
+                      >
+                        Açık Rıza Metni’ni
+                      </Link>
+                      {' okudum ve onaylıyorum.'}
+                    </>
+                  ) : (
+                    <>
+                      I have read and agree to the{' '}
+                      <Link
+                        href="/policy/explicit-consent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:underline"
+                      >
+                        Explicit Consent Form.
+                      </Link>
+                      .
+                    </>
+                  )}
+                </span>
+              </div>
+              <ErrorMsg error={errors.consent?.message} />
             </label>
             <section className="col-span-full">
               <button

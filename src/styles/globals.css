@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @config "../../tailwind.config.js";
 
+button {
+  cursor: pointer;
+}
+
 body {
   @apply bg-black;
 }

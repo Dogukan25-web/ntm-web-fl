@@ -8,6 +8,9 @@ import '@/styles/globals.css';
 import '@/styles/navbar.css';
 import Loader from '@/components/layout/Loader';
 
+import CookiePopup from '@/components/misc/Cookie.Popup';
+import ConsentGTM from '@/components/misc/ConsentGTM';
+
 // * Local font implementation with @next/font/local - #1
 //
 // import localFont from '@next/font/local';
@@ -35,6 +38,8 @@ function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <>
+      <CookiePopup />
+      <ConsentGTM />
       {/* 
       //* Local font implementation with @next/font/local - #2
       //? eslint-disable-next-line react/no-unknown-property 

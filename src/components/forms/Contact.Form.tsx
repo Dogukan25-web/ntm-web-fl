@@ -1,5 +1,6 @@
 /* eslint-disable no-alert */
 import React from 'react';
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import ErrorMsg from '@/components/forms/Error.Msg';
 import apiClient from '@/common/clients/api.client';
@@ -18,7 +19,7 @@ function ContactForm() {
     formState: { errors },
   } = useForm<ContactFormData>();
   const [isSubmitting, setIsSubmitting] = React.useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
     const HP = document.querySelector('#requirements') as HTMLInputElement;
@@ -60,8 +61,8 @@ function ContactForm() {
               <section className="flex w-full flex-col items-start justify-start gap-1">
                 <h3 className="text-sm font-semibold text-zinc-700">ADRES</h3>
                 <p className="text-xs text-zinc-500">
-                  Başakşehir, İkitelli OSB Mah. X. Cad. No: X, 34000
-                  Başakşehir/İstanbul
+                  İkitelli OSB, Ziya Gökalp Mahallesi, Pik Dökümcüler Sanayi
+                  Sitesi, No:27, TEM 34, Kat:2, No:205
                 </p>
               </section>
             </li>
@@ -71,10 +72,16 @@ function ContactForm() {
               <section className="flex w-full flex-col items-start justify-start gap-1">
                 <h3 className="text-sm font-semibold text-zinc-700">TELEFON</h3>
                 <a
-                  href="tel:+902121234567"
+                  href="tel:+902128777025"
                   className="text-xs text-zinc-500 hover:underline"
                 >
-                  +90 212 123 45 67
+                  +90 (212) 877 70 25
+                </a>
+                <a
+                  href="tel:+905458533962"
+                  className="text-xs text-zinc-500 hover:underline"
+                >
+                  +90 (545) 853 39 62
                 </a>
               </section>
             </li>
@@ -84,17 +91,17 @@ function ContactForm() {
               <section className="flex w-full flex-col items-start justify-start gap-1">
                 <h3 className="text-sm font-semibold text-zinc-700">E-POSTA</h3>
                 <a
-                  href="mailto:info@example.com"
+                  href="mailto:info@nurimakteknik.com"
                   className="text-xs text-zinc-500 hover:underline"
                 >
-                  info@example.com
+                  info@nurimakteknik.com
                 </a>
               </section>
             </li>
           </ul>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="grid h-full w-full grid-cols-1 place-content-start gap-10 bg-white p-5 lg:grid-cols-2 lg:p-10"
+            className="grid h-full w-full grid-cols-1 place-content-start gap-5 bg-white p-5 lg:grid-cols-2 lg:p-10"
           >
             <label
               htmlFor="name"
@@ -204,6 +211,53 @@ function ContactForm() {
                 className="min-h-20 w-full border border-zinc-300 p-2 text-sm placeholder-zinc-300 ring-0! outline-0! transition-all duration-200 focus:border-yellow-400"
               />
               <ErrorMsg error={errors.message?.message} />
+            </label>
+            <label
+              htmlFor="kvkk"
+              className="col-span-full flex w-full flex-col items-start justify-start gap-1"
+            >
+              <div className="flex items-center gap-2">
+                <input
+                  id="kvkk"
+                  type="checkbox"
+                  {...register('kvkk', {
+                    required: t('forms.error.required'),
+                  })}
+                  className="form-checkbox h-4 w-4 border border-zinc-300 text-yellow-400 focus:ring-yellow-400"
+                />
+                <span className="text-sm text-zinc-500">
+                  {i18n.language === 'tr' ? (
+                    <>
+                      <Link
+                        href="/policy/kvkk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:underline"
+                      >
+                        KVKK Aydınlatma Metni
+                      </Link>
+                      {
+                        ' kapsamında kişisel verilerimin işlenmesini kabul ediyorum.'
+                      }
+                    </>
+                  ) : (
+                    <>
+                      I consent to the processing of my personal data in
+                      accordance with the{' '}
+                      <Link
+                        href="/policy/kvkk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-500 hover:underline"
+                      >
+                        KVKK Disclosure Text
+                      </Link>
+                      .
+                    </>
+                  )}
+                </span>
+              </div>
+              <ErrorMsg error={errors.kvkk?.message} />
             </label>
             <section className="col-span-full">
               <button

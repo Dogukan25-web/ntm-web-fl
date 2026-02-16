@@ -38,8 +38,8 @@ function CTA() {
           >
             {t('global-buttons.quote')}
           </Link>
-          <Link
-            href="/about"
+          <a
+            href="tel:+902128777025"
             style={{
               letterSpacing: '0.1em',
             }}
@@ -47,7 +47,7 @@ function CTA() {
           >
             <FaPhoneAlt className="h-4 w-4" />
             <span>{t('global-buttons.call-us')}</span>
-          </Link>
+          </a>
         </section>
       </section>
       <div

@@ -5,9 +5,9 @@ import DogukanRazi from '@/public/assets/img/avatars/dogukan-razi.jpg';
 
 const allPeoples = [
   {
-    name: 'Doğukan RAZİ',
+    name: 'Nurettin RAZİ',
     title: 'about.peoples.roles.technical-responsible',
-    mail: 'dogukanrazi@nurimakteknik.com',
+    mail: 'nurettinrazi@nurimakteknik.com',
     img: DogukanRazi.src,
   },
   {

@@ -147,18 +147,17 @@ export default function Navbar(): React.ReactNode {
                     <ul>
                       {ProductCategories.map((product) => (
                         <li key={`nav-p-ct-${product.id}`}>
-                          {/* <Link href={`/products/${product.slug}`}> */}
                           <Link href="/products">
                             <product.icon />
                             <section>
-                              <p className="">
+                              <span className="">
                                 {t(`${product.slug}.title`, { ns: 'products' })}
-                              </p>
-                              <p>
+                              </span>
+                              <span>
                                 {t(`${product.slug}.short-desc`, {
                                   ns: 'products',
                                 })}
-                              </p>
+                              </span>
                             </section>
                           </Link>
                         </li>
