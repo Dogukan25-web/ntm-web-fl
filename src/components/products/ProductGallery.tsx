@@ -141,7 +141,7 @@ function ProductGallery() {
               }}
               className="w-full border-b border-b-zinc-200 pb-2 text-sm font-medium text-zinc-400"
             >
-              KATEGORİLER
+              {t('categories', { ns: 'products' })}
             </span>
             <ul className="categories-selector relative m-0 flex w-full list-none items-start justify-start gap-2 overflow-scroll p-0 md:flex-col md:overflow-hidden lg:flex-col lg:overflow-hidden">
               <li className="m-0 flex w-full min-w-fit items-start justify-start p-0">
