@@ -154,7 +154,7 @@ function ProductGallery() {
                     selectedCategory === null || selectedCategory === 'FR'
                   }
                 >
-                  Tüm Kategoriler
+                  {t('all-categories-btn', { ns: 'products' })}
                 </button>
               </li>
               {productCategories.map((category) => (

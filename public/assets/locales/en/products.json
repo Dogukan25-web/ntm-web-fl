@@ -1,0 +1,26 @@
+{
+  "mini": "OUR AREAS OF EXPERTISE",
+  "title": "OUR PRODUCTS AND SOLUTIONS",
+  "meta": {
+    "title": "NTM | Our Products and Solutions",
+    "description": "Learn more about the products and solutions offered by NTM."
+  },
+  "hero": {
+    "title": "PRODUCTS"
+  },
+  "recycling-systems": {
+    "title": "Recycling Systems",
+    "short-desc": "Eco-friendly solutions that reintegrate waste into the economy"
+  },
+  "foundry-systems": {
+    "title": "Foundry Systems",
+    "short-desc": "Innovative and efficient solutions for foundries"
+  },
+  "see-all-btn": "View All",
+  "search-placeholder": "Search products...",
+  "details-btn": "VIEW >",
+  "all-categories-btn": "ALL CATEGORIES",
+  "product": {
+    "product-images": "PRODUCT IMAGES"
+  }
+}

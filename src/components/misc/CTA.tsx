@@ -30,7 +30,7 @@ function CTA() {
         </p>
         <section className="mt-10 flex w-full flex-wrap items-start justify-start gap-5">
           <Link
-            href="#contact"
+            href="/request-quote"
             style={{
               letterSpacing: '0.1em',
             }}

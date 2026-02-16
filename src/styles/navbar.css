@@ -48,7 +48,6 @@
 
             > section.submenu-header {
               @apply flex w-full p-3;
-
               > span {
                 @apply w-full border-b border-b-zinc-200 pb-3 text-left text-xs font-medium text-zinc-500;
               }
@@ -61,12 +60,11 @@
                   @apply mt-1 aspect-square h-6 w-6 text-yellow-500;
                 }
                 > section {
-                  @apply m-0 w-full p-0;
-
-                  > p:first-child {
+                  @apply m-0 flex w-full flex-col items-start justify-start p-0;
+                  > span:first-child {
                     @apply whitespace-nowrap;
                   }
-                  > p:not(:first-child) {
+                  > span:not(:first-child) {
                     @apply min-w-sm text-xs text-zinc-400;
                   }
                 }

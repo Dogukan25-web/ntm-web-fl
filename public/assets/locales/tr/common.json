@@ -94,7 +94,12 @@
     },
     "mini": "BİZE ULAŞIN",
     "title": "İLETİŞİM FORMU",
-    "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
+    "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin.",
+    "side-elm": {
+      "address": "ADRES",
+      "phone": "TELEFON",
+      "email": "E-POSTA"
+    }
   },
   "quote": {
     "meta": {
@@ -106,7 +111,26 @@
     },
     "mini": "TEKLİF TALEBİNDE BULUNUN",
     "title": "TEKLİF FORMU",
-    "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin."
+    "content": "Metal geri dönüşüm, dökümhane ve endüstriyel tesis projeleriniz için ihtiyaçlarınıza özel çözümler sunuyoruz. Teknik gereksinimlerinizi analiz ederek, işletmenize uygun sistemleri mühendislik temelli bir yaklaşımla planlıyoruz. Projeniz için detaylı bilgi almak ve teknik teklif oluşturmak üzere bizimle iletişime geçin.",
+    "side-elm": {
+      "title": "TEKNİK ANALİZ SÜRECİ",
+      "content": "Mühendislik ekibimiz, ilettiğiniz teknik gereksinimleri inceleyerek projenize özel bir analiz ve maliyet tahmini oluşturur. Lütfen sistem gereksinimlerinizi mümkün olduğunca detaylı belirtiniz.",
+      "list": [
+        {
+          "title": "Proje Bazlı Analiz",
+          "content": "İhtiyaçlarınıza özel tasarlanmış çözümler."
+        },
+        {
+          "title": "40+ Yıllık Tecrübe",
+          "content": "Ağır sanayi makine üretiminde uzmanlık."
+        },
+        {
+          "title": "Yerinde Kurulum",
+          "content": "Anahtar teslim proje ve kurulum hizmeti."
+        }
+      ],
+      "contact": "İLETİŞİM"
+    }
   },
   "forms": {
     "name": {

@@ -52,10 +52,13 @@ function PolicyPage({ policyData }: Props) {
 
 export default PolicyPage;
 
-export async function getStaticPaths() {
-  const paths = policyPages.map((slug) => ({
-    params: { slug },
-  }));
+export async function getStaticPaths({ locales }: { locales: string[] }) {
+  const paths = policyPages.flatMap((slug) =>
+    locales.map((locale) => ({
+      params: { slug },
+      locale,
+    })),
+  );
 
   return { paths, fallback: false };
 }

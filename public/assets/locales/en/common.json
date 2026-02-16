@@ -3,7 +3,186 @@
     "default": "Something went wrong. Please try again later.",
     "userNotFound": "User not found."
   },
-  "header": {
-    "home": "Home"
+  "global-buttons": {
+    "quote": "GET A QUOTE",
+    "call-us": "CALL US",
+    "view-products": "VIEW PRODUCTS"
+  },
+  "policy": {
+    "popup-desc": "Cookies are used on our website to improve service quality and analyze site usage.",
+    "explicit-consent": "EXPLICIT CONSENT NOTICE",
+    "privacy-policy": "PRIVACY POLICY",
+    "kvkk-policy": "KVKK POLICY",
+    "terms-of-service": "TERMS OF SERVICE",
+    "cookie-policy": "COOKIE POLICY",
+    "accept-all": "Accept All",
+    "accept-necessary": "Accept Necessary Only",
+    "manage-consent": "Manage Cookie Preferences"
+  },
+  "navbar": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "products": {
+      "main": "PRODUCTS",
+      "sub": {
+        "main": "OUR SERVICES"
+      }
+    },
+    "contact": "CONTACT",
+    "quote": "GET A QUOTE"
+  },
+  "home": {
+    "meta": {
+      "title": "NTM | NURİMAK Technical Machinery",
+      "description": "Nuri Teknik Makina is an engineering company specializing in heavy industry machinery manufacturing and metal recycling systems since 1980. It provides customized solutions for industrial facilities."
+    },
+    "banner": {
+      "mini": "ENGINEERING EXCELLENCE SINCE 1980",
+      "main": "HEAVY INDUSTRY MACHINERY \nAND METAL RECYCLING SYSTEMS",
+      "content": "Engineering, Manufacturing, and Installation Solutions for Industrial Facilities"
+    },
+    "counts": {
+      "experience": "YEARS OF EXPERIENCE",
+      "projects": "PROJECTS COMPLETED",
+      "quality": "QUALITY CERTIFICATES",
+      "support": "TECHNICAL SUPPORT"
+    },
+    "cta": {
+      "title": "CONTACT",
+      "content": "We provide customized solutions for your metal recycling, foundry, and industrial facility projects. By analyzing your technical requirements, we plan systems tailored to your operations with an engineering-based approach. Contact us to receive detailed information and a technical quotation for your project."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "NTM | About Us",
+      "description": "Nuri Teknik Makina is an engineering company specializing in heavy industry machinery manufacturing and metal recycling systems since 1980. It provides customized solutions for industrial facilities."
+    },
+    "hero": {
+      "title": "ABOUT US"
+    },
+    "desc": {
+      "mini": "EXPERIENCE",
+      "title": "NURİMAK TECHNICAL MACHINERY",
+      "content": "Nuri Teknik Makina was founded in 1980 to operate in the field of heavy industry and industrial machinery manufacturing. Specializing in metal recycling, foundry systems, and industrial automation solutions, the company provides facility-specific engineering, manufacturing, and installation services. With its experienced staff and production infrastructure, it develops reliable, long-lasting, and high-performance industrial systems both domestically and internationally."
+    },
+    "peoples": {
+      "mini": "EXPERT",
+      "title": "OUR TEAM",
+      "roles": {
+        "technical-responsible": "Technical Manager"
+      }
+    },
+    "vision-mision": {
+      "vision": {
+        "title": "OUR VISION",
+        "content": "To become a leading engineering company that develops reliable and long-lasting industrial systems in the metal recycling and heavy industry sectors. To continuously improve production quality and operational efficiency by closely following technological advancements. To become a preferred and sustainable brand with strong domestic and international references."
+      },
+      "mission": {
+        "title": "OUR MISSION",
+        "content": "To design and manufacture high-performance and durable industrial machines tailored to our customers’ needs. To deliver solutions that comply with engineering calculations, quality standards, and field conditions in every project. To stand by our customers throughout the entire lifecycle of our projects with strong after-sales support and long-term partnership."
+      }
+    },
+    "more": "MORE ABOUT US >"
+  },
+  "contact": {
+    "meta": {
+      "title": "NTM | Contact",
+      "description": "Nuri Teknik Makina is an engineering company specializing in heavy industry machinery manufacturing and metal recycling systems since 1980. It provides customized solutions for industrial facilities."
+    },
+    "hero": {
+      "title": "CONTACT"
+    },
+    "mini": "GET IN TOUCH",
+    "title": "CONTACT FORM",
+    "content": "We provide customized solutions for your metal recycling, foundry, and industrial facility projects. By analyzing your technical requirements, we plan systems tailored to your operations with an engineering-based approach. Contact us to receive detailed information and a technical quotation for your project.",
+    "side-elm": {
+      "address": "ADDRESS",
+      "phone": "PHONE",
+      "email": "EMAIL"
+    }
+  },
+  "quote": {
+    "meta": {
+      "title": "NTM | Get a Quote",
+      "description": "Nuri Teknik Makina is an engineering company specializing in heavy industry machinery manufacturing and metal recycling systems since 1980. It provides customized solutions for industrial facilities."
+    },
+    "hero": {
+      "title": "GET A QUOTE"
+    },
+    "mini": "REQUEST A QUOTATION",
+    "title": "QUOTE FORM",
+    "content": "We provide customized solutions for your metal recycling, foundry, and industrial facility projects. By analyzing your technical requirements, we plan systems tailored to your operations with an engineering-based approach. Contact us to receive detailed information and a technical quotation for your project.",
+    "side-elm": {
+      "title": "TECHNICAL ANALYSIS PROCESS",
+      "content": "Our engineering team reviews your technical requirements and prepares a project-specific analysis and cost estimation. Please specify your system requirements in as much detail as possible.",
+      "list": [
+        {
+          "title": "Project-Based Analysis",
+          "content": "Customized solutions designed for your needs."
+        },
+        {
+          "title": "40+ Years of Experience",
+          "content": "Expertise in heavy industry machinery manufacturing."
+        },
+        {
+          "title": "On-Site Installation",
+          "content": "Turnkey project and installation service."
+        }
+      ],
+      "contact": "CONTACT"
+    }
+  },
+  "forms": {
+    "name": {
+      "label": "First Name",
+      "placeholder": "Enter your first name"
+    },
+    "surname": {
+      "label": "Last Name",
+      "placeholder": "Enter your last name"
+    },
+    "fullname": {
+      "label": "Full Name",
+      "placeholder": "Enter your full name"
+    },
+    "company": {
+      "label": "Company",
+      "placeholder": "Enter your company name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email address"
+    },
+    "phone": {
+      "label": "Phone",
+      "placeholder": "Enter your phone number"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Enter your message"
+    },
+    "project": {
+      "label": "Project Details",
+      "placeholder": "Enter details about your project"
+    },
+    "submit": "SUBMIT",
+    "submitting": "SUBMITTING...",
+    "error": {
+      "required": "This field is required.",
+      "email-invalid": "Invalid email address.",
+      "phone-invalid": "Invalid phone number."
+    },
+    "contact-success": "Your message has been sent successfully. We will contact you as soon as possible.",
+    "contact-fail": "An error occurred while sending your message. Please try again later.",
+    "quote-success": "Your quote request has been sent successfully. We will contact you as soon as possible.",
+    "quote-fail": "An error occurred while sending your quote request. Please try again later."
+  },
+  "footer": {
+    "quick-links": "QUICK LINKS",
+    "company": {
+      "title": "CORPORATE",
+      "certificates": "CERTIFICATES"
+    },
+    "contact-us": "CONTACT US"
   }
 }

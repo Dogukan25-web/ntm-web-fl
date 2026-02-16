@@ -67,14 +67,11 @@ function QuoteForm() {
               <h3 className="flex flex-row items-center justify-start gap-2">
                 <FaUserGear className="h-6 w-6 text-yellow-500" />
                 <span className="text-lg font-medium text-zinc-700">
-                  TEKNİK ANALİZ SÜRECİ
+                  {t('quote.side-elm.title')}
                 </span>
               </h3>
               <p className="text-xs text-zinc-500">
-                Mühendislik ekibimiz, ilettiğiniz teknik gereksinimleri
-                inceleyerek projenize özel bir analiz ve maliyet tahmini
-                oluşturur. Lütfen sistem gereksinimlerinizi mümkün olduğunca
-                detaylı belirtiniz.
+                {t('quote.side-elm.content')}
               </p>
             </section>
             <ul className="m-0 flex w-full list-none flex-col gap-4 p-0">
@@ -84,10 +81,10 @@ function QuoteForm() {
                 </span>
                 <section className="flex flex-col items-start justify-start gap-0.5">
                   <h4 className="text-base font-medium text-zinc-700">
-                    Proje Bazlı Mühendislik
+                    {t('quote.side-elm.list.0.title')}
                   </h4>
                   <p className="text-xs text-zinc-500">
-                    İhtiyaçlarınıza özel tasarlanmış çözümler.
+                    {t('quote.side-elm.list.0.content')}
                   </p>
                 </section>
               </li>
@@ -97,10 +94,10 @@ function QuoteForm() {
                 </span>
                 <section className="flex flex-col items-start justify-start gap-0.5">
                   <h4 className="text-base font-medium text-zinc-700">
-                    40+ Yıllık Tecrübe
+                    {t('quote.side-elm.list.1.title')}
                   </h4>
                   <p className="text-xs text-zinc-500">
-                    İhtiyaçlarınıza özel tasarlanmış çözümler.
+                    {t('quote.side-elm.list.1.content')}
                   </p>
                 </section>
               </li>
@@ -110,10 +107,10 @@ function QuoteForm() {
                 </span>
                 <section className="flex flex-col items-start justify-start gap-0.5">
                   <h4 className="text-base font-medium text-zinc-700">
-                    Yerinde Kurulum
+                    {t('quote.side-elm.list.2.title')}
                   </h4>
                   <p className="text-xs text-zinc-500">
-                    Anahtar teslim proje ve kurulum hizmeti.
+                    {t('quote.side-elm.list.2.content')}
                   </p>
                 </section>
               </li>
@@ -126,7 +123,7 @@ function QuoteForm() {
                 }}
                 className="text-xs font-semibold text-zinc-400"
               >
-                İLETİŞİM
+                {t('quote.side-elm.contact')}
               </h3>
               <li className="m-0 p-0">
                 <a

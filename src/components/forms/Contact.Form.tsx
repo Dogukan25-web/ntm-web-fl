@@ -59,7 +59,9 @@ function ContactForm() {
             <li className="flex w-full flex-row items-start justify-start gap-4">
               <FaUserGear className="h-6 w-6 text-yellow-500" />
               <section className="flex w-full flex-col items-start justify-start gap-1">
-                <h3 className="text-sm font-semibold text-zinc-700">ADRES</h3>
+                <h3 className="text-sm font-semibold text-zinc-700">
+                  {t('contact.side-elm.address')}
+                </h3>
                 <p className="text-xs text-zinc-500">
                   İkitelli OSB, Ziya Gökalp Mahallesi, Pik Dökümcüler Sanayi
                   Sitesi, No:27, TEM 34, Kat:2, No:205
@@ -70,7 +72,9 @@ function ContactForm() {
             <li className="flex w-full flex-row items-start justify-start gap-4">
               <FaPhoneAlt className="h-6 w-6 text-yellow-500" />
               <section className="flex w-full flex-col items-start justify-start gap-1">
-                <h3 className="text-sm font-semibold text-zinc-700">TELEFON</h3>
+                <h3 className="text-sm font-semibold text-zinc-700">
+                  {t('contact.side-elm.phone')}
+                </h3>
                 <a
                   href="tel:+902128777025"
                   className="text-xs text-zinc-500 hover:underline"
@@ -89,7 +93,9 @@ function ContactForm() {
             <li className="flex w-full flex-row items-start justify-start gap-4">
               <FaEnvelope className="h-6 w-6 text-yellow-500" />
               <section className="flex w-full flex-col items-start justify-start gap-1">
-                <h3 className="text-sm font-semibold text-zinc-700">E-POSTA</h3>
+                <h3 className="text-sm font-semibold text-zinc-700">
+                  {t('contact.side-elm.email')}
+                </h3>
                 <a
                   href="mailto:info@nurimakteknik.com"
                   className="text-xs text-zinc-500 hover:underline"
