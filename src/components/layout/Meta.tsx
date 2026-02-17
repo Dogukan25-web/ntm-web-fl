@@ -23,7 +23,7 @@ function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
         />
         <link
           rel="icon"
-          href={`${router.basePath}/favicon.${favIconType}`}
+          href={`${router.basePath}/favicon.${favIconType || 'ico'}`}
           type="image/x-icon"
         />
       </Head>
