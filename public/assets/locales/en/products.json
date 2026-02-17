@@ -16,6 +16,10 @@
     "title": "Foundry Systems",
     "short-desc": "Innovative and efficient solutions for foundries"
   },
+  "mini-cta": {
+    "mini": "ABOUT THIS PRODUCT",
+    "title": "Request a Quote Now"
+  },
   "categories": "CATEGORIES",
   "see-all-btn": "View All",
   "search-placeholder": "Search products...",

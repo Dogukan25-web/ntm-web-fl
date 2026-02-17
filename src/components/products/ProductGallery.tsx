@@ -5,8 +5,6 @@ import { useTranslation } from 'next-i18next';
 
 import { productCategories, products } from '@/common/content/content';
 
-import MockIMG from '@/public/assets/img/products/mock.webp';
-
 function FilteredProducts({
   categorySlug,
   searchKeyword,
@@ -53,7 +51,7 @@ function FilteredProducts({
             href={`/products/${product.slug}`}
           >
             <img
-              src={MockIMG.src}
+              src={product.images?.[2] || ''}
               alt={product.name[i18n.language]}
               className="aspect-square! w-full object-cover object-center"
             />

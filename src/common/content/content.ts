@@ -1,6 +1,72 @@
-import MockIMG from '@/public/assets/img/recycling-banner.webp';
-import MockIMG2 from '@/public/assets/img/furnace-misc.webp';
-import MockIMG3 from '@/public/assets/img/foundry-banner.webp';
+// Tiltable Rotary Furnace
+import TiltableRotaryFurnace1 from '@/public/assets/img/products/tiltable-rotary-furnace/left.webp';
+import TiltableRotaryFurnace3 from '@/public/assets/img/products/tiltable-rotary-furnace/cad.webp';
+import TiltableRotaryFurnace2 from '@/public/assets/img/products/tiltable-rotary-furnace/center.webp';
+
+// Reverber Furnace
+import ReverberFurnace1 from '@/public/assets/img/products/reverber-furnace/left.webp';
+import ReverberFurnace2 from '@/public/assets/img/products/reverber-furnace/center.webp';
+import ReverberFurnace3 from '@/public/assets/img/products/reverber-furnace/cad.webp';
+
+// Tiltable Pota Furnace
+import TiltablePotaFurnace1 from '@/public/assets/img/products/tiltable-pota-furnace/left.webp';
+import TiltablePotaFurnace2 from '@/public/assets/img/products/tiltable-pota-furnace/center.webp';
+import TiltablePotaFurnace3 from '@/public/assets/img/products/tiltable-pota-furnace/cad.webp';
+
+// Copper Melting System
+import CopperMeltingSystem1 from '@/public/assets/img/products/copper-melting-system/left.webp';
+import CopperMeltingSystem2 from '@/public/assets/img/products/copper-melting-system/center.webp';
+import CopperMeltingSystem3 from '@/public/assets/img/products/copper-melting-system/cad.webp';
+
+// Ingot Casting System
+import IngotCastingSystem1 from '@/public/assets/img/products/ingot-casting-system/left.webp';
+import IngotCastingSystem2 from '@/public/assets/img/products/ingot-casting-system/center.webp';
+import IngotCastingSystem3 from '@/public/assets/img/products/ingot-casting-system/cad.webp';
+
+// De-ox Casting Machine
+import DeOxCastingMachine1 from '@/public/assets/img/products/deox-casting-machine/left.webp';
+import DeOxCastingMachine2 from '@/public/assets/img/products/deox-casting-machine/center.webp';
+import DeOxCastingMachine3 from '@/public/assets/img/products/deox-casting-machine/cad.webp';
+
+// T Ingot (sow) Casting Line
+import TIngotSowCastingLine1 from '@/public/assets/img/products/t-ingot-sow-casting-line/left.webp';
+import TIngotSowCastingLine2 from '@/public/assets/img/products/t-ingot-sow-casting-line/center.webp';
+import TIngotSowCastingLine3 from '@/public/assets/img/products/t-ingot-sow-casting-line/cad.webp';
+
+// Liquid Metal Pumps
+import LiquidMetalPumps1 from '@/public/assets/img/products/liquid-metal-pump/left.webp';
+import LiquidMetalPumps2 from '@/public/assets/img/products/liquid-metal-pump/center.webp';
+import LiquidMetalPumps3 from '@/public/assets/img/products/liquid-metal-pump/cad.webp';
+
+// Liquid Metal Mixers
+import LiquidMetalMixers1 from '@/public/assets/img/products/liquid-metal-mixer/left.webp';
+import LiquidMetalMixers2 from '@/public/assets/img/products/liquid-metal-mixer/center.webp';
+import LiquidMetalMixers3 from '@/public/assets/img/products/liquid-metal-mixer/cad.webp';
+
+// Liquid Metal Transfer Systems
+import LiquidMetalTransferSystems1 from '@/public/assets/img/products/liquid-metal-transfer-system/left.webp';
+import LiquidMetalTransferSystems2 from '@/public/assets/img/products/liquid-metal-transfer-system/center.webp';
+import LiquidMetalTransferSystems3 from '@/public/assets/img/products/liquid-metal-transfer-system/cad.webp';
+
+// Briquetting Presses
+import BriquettingPresses1 from '@/public/assets/img/products/briquetting-pres/left.webp';
+import BriquettingPresses2 from '@/public/assets/img/products/briquetting-pres/center.webp';
+import BriquettingPresses3 from '@/public/assets/img/products/briquetting-pres/cad.webp';
+
+// Scrap Baling
+import ScrapBaling1 from '@/public/assets/img/products/scrap-baling/left.webp';
+import ScrapBaling2 from '@/public/assets/img/products/scrap-baling/center.webp';
+import ScrapBaling3 from '@/public/assets/img/products/scrap-baling/cad.webp';
+
+// Slag Presses
+import SlagPresses1 from '@/public/assets/img/products/slag-pres-machine/left.webp';
+import SlagPresses2 from '@/public/assets/img/products/slag-pres-machine/center.webp';
+import SlagPresses3 from '@/public/assets/img/products/slag-pres-machine/cad.webp';
+
+// Slag Drum
+import SlagDrum1 from '@/public/assets/img/products/slag-drum/left.webp';
+import SlagDrum2 from '@/public/assets/img/products/slag-drum/center.webp';
+import SlagDrum3 from '@/public/assets/img/products/slag-drum/cad.webp';
 
 export interface ProductCategory {
   name: {
@@ -72,7 +138,11 @@ const products: Product[] = [
     },
     category: productCategories[0],
     slug: 'tiltable-rotary-furnace',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      TiltableRotaryFurnace1.src,
+      TiltableRotaryFurnace2.src,
+      TiltableRotaryFurnace3.src,
+    ],
   },
   {
     name: {
@@ -81,7 +151,7 @@ const products: Product[] = [
     },
     category: productCategories[0],
     slug: 'reverber-furnace',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [ReverberFurnace1.src, ReverberFurnace2.src, ReverberFurnace3.src],
   },
   {
     name: {
@@ -90,7 +160,11 @@ const products: Product[] = [
     },
     category: productCategories[0],
     slug: 'tiltable-pota-furnace',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      TiltablePotaFurnace1.src,
+      TiltablePotaFurnace2.src,
+      TiltablePotaFurnace3.src,
+    ],
   },
   {
     name: {
@@ -99,7 +173,11 @@ const products: Product[] = [
     },
     category: productCategories[0],
     slug: 'copper-melting-system',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      CopperMeltingSystem1.src,
+      CopperMeltingSystem2.src,
+      CopperMeltingSystem3.src,
+    ],
   },
   {
     name: {
@@ -108,7 +186,11 @@ const products: Product[] = [
     },
     category: productCategories[1],
     slug: 'ingot-casting-system',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      IngotCastingSystem1.src,
+      IngotCastingSystem2.src,
+      IngotCastingSystem3.src,
+    ],
   },
   {
     name: {
@@ -117,7 +199,11 @@ const products: Product[] = [
     },
     category: productCategories[1],
     slug: 'de-ox-casting-machine',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      DeOxCastingMachine1.src,
+      DeOxCastingMachine2.src,
+      DeOxCastingMachine3.src,
+    ],
   },
   {
     name: {
@@ -126,7 +212,11 @@ const products: Product[] = [
     },
     category: productCategories[1],
     slug: 't-ingot-sow-casting-line',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      TIngotSowCastingLine1.src,
+      TIngotSowCastingLine2.src,
+      TIngotSowCastingLine3.src,
+    ],
   },
   {
     name: {
@@ -135,7 +225,11 @@ const products: Product[] = [
     },
     category: productCategories[2],
     slug: 'liquid-metal-pumps',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      LiquidMetalPumps1.src,
+      LiquidMetalPumps2.src,
+      LiquidMetalPumps3.src,
+    ],
   },
   {
     name: {
@@ -144,7 +238,11 @@ const products: Product[] = [
     },
     category: productCategories[2],
     slug: 'liquid-metal-mixers',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      LiquidMetalMixers1.src,
+      LiquidMetalMixers2.src,
+      LiquidMetalMixers3.src,
+    ],
   },
   {
     name: {
@@ -153,7 +251,11 @@ const products: Product[] = [
     },
     category: productCategories[2],
     slug: 'liquid-metal-transfer-systems',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      LiquidMetalTransferSystems1.src,
+      LiquidMetalTransferSystems2.src,
+      LiquidMetalTransferSystems3.src,
+    ],
   },
   {
     name: {
@@ -162,7 +264,11 @@ const products: Product[] = [
     },
     category: productCategories[3],
     slug: 'briquetting-presses',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [
+      BriquettingPresses1.src,
+      BriquettingPresses2.src,
+      BriquettingPresses3.src,
+    ],
   },
   {
     name: {
@@ -171,7 +277,7 @@ const products: Product[] = [
     },
     category: productCategories[3],
     slug: 'scrap-baling',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [ScrapBaling1.src, ScrapBaling2.src, ScrapBaling3.src],
   },
   {
     name: {
@@ -180,7 +286,7 @@ const products: Product[] = [
     },
     category: productCategories[4],
     slug: 'slag-presses',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [SlagPresses1.src, SlagPresses2.src, SlagPresses3.src],
   },
   {
     name: {
@@ -189,7 +295,7 @@ const products: Product[] = [
     },
     category: productCategories[4],
     slug: 'slag-drum',
-    images: [MockIMG.src, MockIMG2.src, MockIMG3.src],
+    images: [SlagDrum1.src, SlagDrum2.src, SlagDrum3.src],
   },
 ];
 
