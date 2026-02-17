@@ -69,6 +69,9 @@
       "mini": "EXPERT",
       "title": "OUR TEAM",
       "roles": {
+        "firm-manager": "Company Manager",
+        "firm-responsible": "Company Responsible",
+        "sales-responsible": "Sales Manager",
         "technical-responsible": "Technical Manager"
       }
     },

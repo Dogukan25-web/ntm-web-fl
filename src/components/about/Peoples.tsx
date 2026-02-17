@@ -2,25 +2,26 @@ import React from 'react';
 import { useTranslation } from 'next-i18next';
 
 import DogukanRazi from '@/public/assets/img/avatars/dogukan-razi.jpg';
+import ElifRazi from '@/public/assets/img/avatars/elif-razi.webp';
 
 const allPeoples = [
   {
     name: 'Nurettin RAZİ',
-    title: 'about.peoples.roles.technical-responsible',
+    title: 'about.peoples.roles.firm-manager',
     mail: 'nurettinrazi@nurimakteknik.com',
     img: DogukanRazi.src,
   },
   {
-    name: 'Elif RAZİ',
-    title: 'about.peoples.roles.technical-responsible',
-    mail: 'elifrazi@nurimakteknik.com',
+    name: 'Doğukan RAZİ',
+    title: 'about.peoples.roles.firm-responsible',
+    mail: 'dogukanrazi@nurimakteknik.com',
     img: DogukanRazi.src,
   },
   {
-    name: 'Doğukan RAZİ',
-    title: 'about.peoples.roles.technical-responsible',
-    mail: 'dogukanrazi@nurimakteknik.com',
-    img: DogukanRazi.src,
+    name: 'Elif RAZİ',
+    title: 'about.peoples.roles.sales-responsible',
+    mail: 'elifrazi@nurimakteknik.com',
+    img: ElifRazi.src,
   },
 ];
 

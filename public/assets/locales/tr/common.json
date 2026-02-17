@@ -69,6 +69,9 @@
       "mini": "UZMAN",
       "title": "KADROMUZ",
       "roles": {
+        "firm-manager": "Firma Yöneticisi",
+        "firm-responsible": "Firma Yetkilisi",
+        "sales-responsible": "Satış Sorumlusu",
         "technical-responsible": "Teknik Sorumlu"
       }
     },
