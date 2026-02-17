@@ -20,7 +20,7 @@ const allPeoples = [
   },
   {
     name: 'Elif RAZİ',
-    title: 'about.peoples.roles.sales-responsible',
+    title: 'about.peoples.roles.purchase-manager',
     mail: 'elifrazi@nurimakteknik.com',
     img: ElifRazi.src,
   },
