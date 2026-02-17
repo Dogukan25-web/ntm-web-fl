@@ -1,15 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import DogukanRazi from '@/public/assets/img/avatars/dogukan-razi.jpg';
 import ElifRazi from '@/public/assets/img/avatars/elif-razi.webp';
+import NurettinRazi from '@/public/assets/img/avatars/nurettin-razi.webp';
+import DogukanRazi from '@/public/assets/img/avatars/dogukan-razi.webp';
 
 const allPeoples = [
   {
     name: 'Nurettin RAZİ',
     title: 'about.peoples.roles.firm-manager',
     mail: 'nurettinrazi@nurimakteknik.com',
-    img: DogukanRazi.src,
+    img: NurettinRazi.src,
   },
   {
     name: 'Doğukan RAZİ',
