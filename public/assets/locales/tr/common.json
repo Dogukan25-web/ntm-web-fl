@@ -71,7 +71,7 @@
       "roles": {
         "firm-manager": "Firma Yöneticisi",
         "firm-responsible": "Firma Yetkilisi",
-        "sales-responsible": "Satış Sorumlusu",
+        "purchase-manager": "Satın Alma Müdürü",
         "technical-responsible": "Teknik Sorumlu"
       }
     },

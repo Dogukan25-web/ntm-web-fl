@@ -71,7 +71,7 @@
       "roles": {
         "firm-manager": "Company Manager",
         "firm-responsible": "Company Responsible",
-        "sales-responsible": "Sales Manager",
+        "purchase-manager": "Purchase Manager",
         "technical-responsible": "Technical Manager"
       }
     },
