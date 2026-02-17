@@ -202,14 +202,14 @@ function Footer(): React.ReactNode {
           </li>
         </ul>
       </section>
-      <section className="flex w-full items-center justify-center gap-1 bg-black p-2 text-xs text-zinc-700">
+      <section className="flex w-full items-center justify-center gap-2 bg-black p-2 text-xs text-zinc-700">
         <p>Made By</p>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/of-kayalar/"
         >
-          Ö. Kaya
+          Ö. KAYALAR
         </a>
       </section>
     </footer>
