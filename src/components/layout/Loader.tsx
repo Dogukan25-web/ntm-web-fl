@@ -10,12 +10,12 @@ function Loader(): React.ReactNode {
   });
 
   const HideLoader = async () => {
-    await Wait(150);
+    await Wait(550);
     setLoader({
       inHTML: true,
       isActive: false,
     });
-    await Wait(500);
+    await Wait(650);
     setLoader({
       inHTML: false,
       isActive: false,
@@ -49,7 +49,7 @@ function Loader(): React.ReactNode {
     (loader.inHTML && (
       <div
         style={{
-          transition: loader.isActive ? 'none' : 'all 0.5s',
+          transition: loader.isActive ? 'none' : 'all 0.6s',
         }}
         className={` ${loader.isActive ? 'visible opacity-100' : 'invisible opacity-0'} fixed top-0 left-0 z-999999! flex h-full w-full items-center justify-center bg-black`}
       />
