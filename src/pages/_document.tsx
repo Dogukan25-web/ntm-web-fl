@@ -1,9 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
+  const {
+    i18n: { language },
+  } = useTranslation();
   return (
-    <Html lang="en">
+    <Html lang={language}>
       <Head>
         {/*
         // * URL Font implementation
