@@ -202,15 +202,20 @@ function Footer(): React.ReactNode {
           </li>
         </ul>
       </section>
-      <section className="flex w-full items-center justify-center gap-2 bg-black p-2 text-xs text-zinc-700">
-        <p>Made By</p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/of-kayalar/"
-        >
-          Ö. KAYALAR
-        </a>
+      <section className="flex w-full flex-wrap items-center justify-center gap-4 bg-black p-2 text-center text-xs text-zinc-700">
+        <span>Copyright © 2026</span>{' '}
+        <span>NURİMAK TEKNİK MAKİNA San. ve Tic. Ltd. Şti.</span>
+        <span>
+          Designed by{' '}
+          <a
+            target="_blank"
+            className="underline"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/of-kayalar/"
+          >
+            Ö. KAYALAR
+          </a>
+        </span>
       </section>
     </footer>
   );

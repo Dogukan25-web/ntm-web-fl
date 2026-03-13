@@ -24,9 +24,9 @@ import IngotCastingSystem2 from '@/public/assets/img/products/ingot-casting-syst
 import IngotCastingSystem3 from '@/public/assets/img/products/ingot-casting-system/cad.webp';
 
 // De-ox Casting Machine
-import DeOxCastingMachine1 from '@/public/assets/img/products/deox-casting-machine/left.webp';
-import DeOxCastingMachine2 from '@/public/assets/img/products/deox-casting-machine/center.webp';
-import DeOxCastingMachine3 from '@/public/assets/img/products/deox-casting-machine/cad.webp';
+import DeOxCastingMachine1 from '@/public/assets/img/products/de-ox-casting-machine/left.webp';
+import DeOxCastingMachine2 from '@/public/assets/img/products/de-ox-casting-machine/center.webp';
+import DeOxCastingMachine3 from '@/public/assets/img/products/de-ox-casting-machine/cad.webp';
 
 // T Ingot (sow) Casting Line
 import TIngotSowCastingLine1 from '@/public/assets/img/products/t-ingot-sow-casting-line/left.webp';
@@ -34,24 +34,24 @@ import TIngotSowCastingLine2 from '@/public/assets/img/products/t-ingot-sow-cast
 import TIngotSowCastingLine3 from '@/public/assets/img/products/t-ingot-sow-casting-line/cad.webp';
 
 // Liquid Metal Pumps
-import LiquidMetalPumps1 from '@/public/assets/img/products/liquid-metal-pump/left.webp';
-import LiquidMetalPumps2 from '@/public/assets/img/products/liquid-metal-pump/center.webp';
-import LiquidMetalPumps3 from '@/public/assets/img/products/liquid-metal-pump/cad.webp';
+import LiquidMetalPumps1 from '@/public/assets/img/products/liquid-metal-pumps/left.webp';
+import LiquidMetalPumps2 from '@/public/assets/img/products/liquid-metal-pumps/center.webp';
+import LiquidMetalPumps3 from '@/public/assets/img/products/liquid-metal-pumps/cad.webp';
 
 // Liquid Metal Mixers
-import LiquidMetalMixers1 from '@/public/assets/img/products/liquid-metal-mixer/left.webp';
-import LiquidMetalMixers2 from '@/public/assets/img/products/liquid-metal-mixer/center.webp';
-import LiquidMetalMixers3 from '@/public/assets/img/products/liquid-metal-mixer/cad.webp';
+import LiquidMetalMixers1 from '@/public/assets/img/products/liquid-metal-mixers/left.webp';
+import LiquidMetalMixers2 from '@/public/assets/img/products/liquid-metal-mixers/center.webp';
+import LiquidMetalMixers3 from '@/public/assets/img/products/liquid-metal-mixers/cad.webp';
 
 // Liquid Metal Transfer Systems
-import LiquidMetalTransferSystems1 from '@/public/assets/img/products/liquid-metal-transfer-system/left.webp';
-import LiquidMetalTransferSystems2 from '@/public/assets/img/products/liquid-metal-transfer-system/center.webp';
-import LiquidMetalTransferSystems3 from '@/public/assets/img/products/liquid-metal-transfer-system/cad.webp';
+import LiquidMetalTransferSystems1 from '@/public/assets/img/products/liquid-metal-transfer-systems/left.webp';
+import LiquidMetalTransferSystems2 from '@/public/assets/img/products/liquid-metal-transfer-systems/center.webp';
+import LiquidMetalTransferSystems3 from '@/public/assets/img/products/liquid-metal-transfer-systems/cad.webp';
 
 // Briquetting Presses
-import BriquettingPresses1 from '@/public/assets/img/products/briquetting-pres/left.webp';
-import BriquettingPresses2 from '@/public/assets/img/products/briquetting-pres/center.webp';
-import BriquettingPresses3 from '@/public/assets/img/products/briquetting-pres/cad.webp';
+import BriquettingPresses1 from '@/public/assets/img/products/briquetting-presses/left.webp';
+import BriquettingPresses2 from '@/public/assets/img/products/briquetting-presses/center.webp';
+import BriquettingPresses3 from '@/public/assets/img/products/briquetting-presses/cad.webp';
 
 // Scrap Baling
 import ScrapBaling1 from '@/public/assets/img/products/scrap-baling/left.webp';
@@ -59,9 +59,9 @@ import ScrapBaling2 from '@/public/assets/img/products/scrap-baling/center.webp'
 import ScrapBaling3 from '@/public/assets/img/products/scrap-baling/cad.webp';
 
 // Slag Presses
-import SlagPresses1 from '@/public/assets/img/products/slag-pres-machine/left.webp';
-import SlagPresses2 from '@/public/assets/img/products/slag-pres-machine/center.webp';
-import SlagPresses3 from '@/public/assets/img/products/slag-pres-machine/cad.webp';
+import SlagPresses1 from '@/public/assets/img/products/slag-presses/left.webp';
+import SlagPresses2 from '@/public/assets/img/products/slag-presses/center.webp';
+import SlagPresses3 from '@/public/assets/img/products/slag-presses/cad.webp';
 
 // Slag Drum
 import SlagDrum1 from '@/public/assets/img/products/slag-drum/left.webp';

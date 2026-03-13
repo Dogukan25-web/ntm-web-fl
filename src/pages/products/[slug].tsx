@@ -12,6 +12,7 @@ import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/misc/Hero';
 import CTA from '@/components/misc/CTA';
 import Footer from '@/components/layout/Footer';
+import Head from 'next/head';
 
 interface Props {
   postData: {
@@ -26,9 +27,39 @@ interface Props {
 function ProductPage({ postData, product }: Props): React.ReactNode {
   const [activeImage, setActiveImage] = React.useState<string>('0');
 
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    sku: postData.slug,
+    name: postData.title,
+    description: postData.description,
+    image: `${process.env.NEXT_PUBLIC_APP_URL}/assets/img/products/${postData.slug}/cad.webp`,
+    url: `${process.env.NEXT_PUBLIC_APP_URL}${language === 'tr' ? '' : `/${language}`}/products/${postData.slug}`,
+    brand: {
+      '@type': 'Brand',
+      name: 'NTM - NURIMAK Teknik Makina',
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'NTM - NURIMAK Teknik Makina',
+    },
+    category: product.category.name[language],
+  };
+
   return (
     <>
+      <Head>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        />
+      </Head>
       <Meta
         title={`NTM | ${postData.title}`}
         description={postData.description}

@@ -9,10 +9,6 @@ body {
   @apply bg-black;
 }
 
-* {
-  scroll-behavior: smooth !important;
-}
-
 .default-zoom-in {
   opacity: 0;
   transform: scale(0.9);

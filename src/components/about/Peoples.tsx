@@ -1,28 +1,26 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import ElifRazi from '@/public/assets/img/avatars/elif-razi.webp';
-import NurettinRazi from '@/public/assets/img/avatars/nurettin-razi.webp';
-import DogukanRazi from '@/public/assets/img/avatars/dogukan-razi.webp';
+import AvatarPlaceholder from '@/public/assets/img/avatars/avatar-placeholder.webp';
 
 const allPeoples = [
   {
     name: 'Nurettin RAZİ',
     title: 'about.peoples.roles.firm-manager',
     mail: 'nurettinrazi@nurimakteknik.com',
-    img: NurettinRazi.src,
+    img: AvatarPlaceholder.src,
   },
   {
     name: 'Doğukan RAZİ',
     title: 'about.peoples.roles.firm-responsible',
     mail: 'dogukanrazi@nurimakteknik.com',
-    img: DogukanRazi.src,
+    img: AvatarPlaceholder.src,
   },
   {
     name: 'Elif RAZİ',
     title: 'about.peoples.roles.purchase-manager',
     mail: 'elifrazi@nurimakteknik.com',
-    img: ElifRazi.src,
+    img: AvatarPlaceholder.src,
   },
 ];
 

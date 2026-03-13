@@ -12,6 +12,25 @@ type MetaProps = {
 function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
   const router = useRouter();
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'NTM - NURIMAK Teknik Makina',
+    url: process.env.NEXT_PUBLIC_APP_URL,
+    logo: `${process.env.NEXT_PUBLIC_APP_URL}/assets/img/logo.webp`,
+    foundingDate: '1980',
+    email: 'info@nurimakteknik.com',
+    telephone: '+90-(212)-877-70-25',
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        areaServed: 'TR',
+        availableLanguage: ['Turkish', 'English'],
+      },
+    ],
+  };
+
   return (
     <>
       <Head>
@@ -25,6 +44,32 @@ function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
           rel="icon"
           href={`${router.basePath}/favicon.${favIconType || 'ico'}`}
           type="image/x-icon"
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={`${process.env.NEXT_PUBLIC_APP_URL}${router.asPath.replace(/^\/(tr|en)/, '')}`}
+        />
+        <link
+          rel="alternate"
+          hrefLang="tr"
+          href={`${process.env.NEXT_PUBLIC_APP_URL}${router.asPath.replace(/^\/(tr|en)/, '')}`}
+        />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href={`${process.env.NEXT_PUBLIC_APP_URL}/en${router.asPath.replace(/^\/(tr|en)/, '')}`}
+        />
+        <link
+          rel="canonical"
+          href={`${process.env.NEXT_PUBLIC_APP_URL}${router.asPath}`}
         />
       </Head>
       <NextSeo
