@@ -11,6 +11,7 @@ type MetaProps = {
 
 function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
   const router = useRouter();
+  const isProductPage = router.pathname.includes('/products/');
 
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -78,6 +79,13 @@ function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
         openGraph={{
           title,
           description,
+          url: `${process.env.NEXT_PUBLIC_APP_URL}${router.asPath}`,
+          images: [
+            {
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/assets/img/furnace-banner.webp`,
+            },
+          ],
+          type: isProductPage ? 'product' : 'website',
           site_name: process.env.NEXT_PUBLIC_APP_NAME,
         }}
       />
