@@ -82,7 +82,7 @@ function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
           url: `${process.env.NEXT_PUBLIC_APP_URL}${router.asPath}`,
           images: [
             {
-              url: `${process.env.NEXT_PUBLIC_APP_URL}/assets/img/furnace-banner.webp`,
+              url: `${process.env.NEXT_PUBLIC_APP_URL}/assets/img/products/tiltable-rotary-furnace/left.webp`,
             },
           ],
           type: isProductPage ? 'product' : 'website',
