@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 
 type MetaProps = {
   title: string;
@@ -12,6 +13,9 @@ type MetaProps = {
 function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
   const router = useRouter();
   const isProductPage = router.pathname.includes('/products/');
+  const {
+    i18n: { language },
+  } = useTranslation();
 
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -70,7 +74,7 @@ function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
         />
         <link
           rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_APP_URL}${router.asPath}`}
+          href={`${process.env.NEXT_PUBLIC_APP_URL}${language === 'tr' ? router.asPath : `/${language}${router.asPath.replace(/^\/(tr|en)/, '')}`}`}
         />
       </Head>
       <NextSeo
@@ -79,7 +83,7 @@ function Meta({ title, description, favIconType }: MetaProps): React.ReactNode {
         openGraph={{
           title,
           description,
-          url: `${process.env.NEXT_PUBLIC_APP_URL}${router.asPath}`,
+          url: `${process.env.NEXT_PUBLIC_APP_URL}${language === 'tr' ? router.asPath : `/${language}${router.asPath.replace(/^\/(tr|en)/, '')}`}`,
           images: [
             {
               url: `${process.env.NEXT_PUBLIC_APP_URL}/assets/img/products/tiltable-rotary-furnace/left.webp`,

@@ -15,7 +15,7 @@ const allReferences = [
   {
     id: 0,
     img: RefIMG1.src,
-    url: 'http://www.kayalaraluminyum.com/',
+    url: 'https://www.kayalaraluminyum.com.tr/',
   },
   {
     id: 1,
